@@ -22,6 +22,11 @@ a {
   a:hover, a:focus {
     color: #eb3812; }
 
+.white-link {
+  color: white; }
+  .white-link:hover, .white-link:focus {
+    color: white; }
+
 h1,
 h2,
 h3,
@@ -46,7 +51,8 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 100px 0;
+  height: 100vh; }
 
 aside {
   padding: 50px 0; }

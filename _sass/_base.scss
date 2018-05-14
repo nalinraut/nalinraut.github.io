@@ -27,6 +27,14 @@ a {
     }
 }
 
+.white-link {
+    color: white;
+    &:hover,
+    &:focus {
+        color: white;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -57,6 +65,7 @@ p {
 
 section {
     padding: 100px 0;
+    height: 100vh
 }
 
 aside {
