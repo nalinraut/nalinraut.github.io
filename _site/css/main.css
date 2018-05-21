@@ -52,7 +52,7 @@ p {
 
 section {
   padding: 100px 0;
-  height: 100vh; }
+  height: auto; }
 
 aside {
   padding: 50px 0; }
@@ -118,6 +118,10 @@ aside {
           .navbar-default.affix .nav > li > a:hover,
           .navbar-default.affix .nav > li > a:focus:hover {
             color: #F05F40; } }
+
+projects {
+  background-image: none !important;
+  height: 10vh !important; }
 
 header {
   position: relative;
@@ -309,3 +313,8 @@ body {
 
 .pro-img {
   border-radius: 50%; }
+
+.projects {
+  background-color: #222222;
+  background-image: none !important;
+  height: 8vh !important; }

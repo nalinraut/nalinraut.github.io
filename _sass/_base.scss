@@ -65,7 +65,7 @@ p {
 
 section {
     padding: 100px 0;
-    height: 100vh
+    height: auto;
 }
 
 aside {
@@ -155,7 +155,12 @@ aside {
         }
     }
 }
+// Projects header
 
+projects {
+    background-image: none !important;
+    height: 10vh !important;
+}
 // Homepage Header
 
 header {
