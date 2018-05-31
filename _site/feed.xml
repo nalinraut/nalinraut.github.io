@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-30T21:00:01-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/moon-theme-(copy)/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
+- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
+- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(another-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(another%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(another-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Swarm robotics nowadays, has become one of the most popular topics among researchers. Maze exploration using swarm robots is a field which has potentially multiple applications in daily life. This project introduces a novel approach to map the maze using a swarm of robots, and further, use this mapped maze to determine the closest path to the goal node depending on the application in which the system is being used. Thus, using an optimized Recursive Backtracking algorithm and a Client-Server Synchronization architecture, we show that using multiple robots to map a large area or maze reduces overall time as well the average number of steps taken by each robot. We also go on to implement A* algorithm on the fully mapped maze to find which robot is nearest to the goal location and&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Firstly, a valid maze is generated using Depth-First Search Algorithm.
+                            Further, robot follows the undermentioned policy,&lt;br /&gt;
+                            • Each robot starts exploring those cells which have not been previously explored by itself  and any other robots.&lt;br /&gt;
+                            • While exploring, if a robot detects a junction which is a cell with two or more branches, the robot arbitrarily chooses a direction for further exploration and stores the junction as potentially unexplored node.&lt;br /&gt;
+                            • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.&lt;br /&gt;
+                            • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.&lt;br /&gt;
+                            • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results displayed in figures below, depict the average number of steps taken by the robots in order to explore and map the complete maze. It can be observed that the average number of steps reduces exponentially with increase in number of robots. It can also be observed that with increase in number of robots and maze size, the factor of load imbalance comes into picture. While the load imbalance doesn’t represent a particuar trend like Average number of steps, we still can logically deduce that the probability of load imbalance increases with increasing robots. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai_result1.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai_results2.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;We present a problem where a swarm of robots is required to map a maze. We introduce a unique multi-robot approach, which enhances Recursive Backtracking algorithm to the multi-robot case. The average number of steps taken in case of multi robot system as compared to single robot decrease effectively. Another factor of load imbalance i.e. a considerable difference in number of steps taken by individual robots is also observed with increase in size of maze and number of robots. The approach mentioned above, also allowsto map the maze from any starting locations for the robots, thus removing the restriction of starting all robots from a single location in the maze. We hope to scale this maze mapping and shortest path planning algorithm from 2D mazes to 3D mazes that will depict different floors of a multi storey building.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Artificial Intelligence</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="http://localhost:4000/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00-04:00</published><updated>2016-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme</id><content type="html" xml:base="http://localhost:4000/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;b&gt;Moon&lt;/b&gt; is a minimal, one column jekyll theme.&lt;/center&gt;
+
+&lt;p&gt;I’m not a developer or designer. And I don’t add footer to show who did this theme. If you like this theme or using it, please give a &lt;strong&gt;star&lt;/strong&gt; for motivation, It makes me happy.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://ghbtns.com/github-btn.html?user=TaylanTatli&amp;amp;repo=Moon&amp;amp;type=star&amp;amp;count=true&amp;amp;size=large&quot; frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;160px&quot; height=&quot;30px&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fork the &lt;a href=&quot;https://github.com/TaylanTatli/Moon/fork&quot;&gt;Moon repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/li&gt;
+  &lt;li&gt;Remove sample posts from &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder and add yours.&lt;/li&gt;
+  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt; file in &lt;code class=&quot;highlighter-rouge&quot;&gt;about&lt;/code&gt; folder.&lt;/li&gt;
+  &lt;li&gt;Change repo name to &lt;code class=&quot;highlighter-rouge&quot;&gt;YourUserName.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s all.&lt;/p&gt;
+
+&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;/h2&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+    
+    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    
+    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    
+    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    
+    &lt;figcaption&gt;Screenshots of Moon Theme&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    
+    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    
+    &lt;a href=&quot;https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png&quot;&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    
+    &lt;figcaption&gt;Moon Theme on Small Screen Size&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;See a &lt;a href=&quot;http://taylantatli.github.io/Moon&quot;&gt;live version of Moon&lt;/a&gt; hosted on GitHub.&lt;/p&gt;
+
+&lt;h2 id=&quot;site-setup&quot;&gt;Site Setup&lt;/h2&gt;
+&lt;p&gt;A quick checklist of the files you’ll want to edit to get up and running.&lt;/p&gt;
+
+&lt;h3 id=&quot;site-wide-configuration&quot;&gt;Site Wide Configuration&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; is your friend. Open it up and personalize it. Most variables are self explanatory but here’s an explanation of each if needed:&lt;/p&gt;
+
+&lt;h4 id=&quot;title&quot;&gt;title&lt;/h4&gt;
+
+&lt;p&gt;The title of your site… shocker!&lt;/p&gt;
+
+&lt;p&gt;Example &lt;code class=&quot;highlighter-rouge&quot;&gt;title: My Awesome Site&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;bio&quot;&gt;bio&lt;/h4&gt;
+
+&lt;p&gt;The description to show on your homepage.&lt;/p&gt;
+
+&lt;h4 id=&quot;description&quot;&gt;description&lt;/h4&gt;
+
+&lt;p&gt;The description to use for meta tags and navigation menu.&lt;/p&gt;
+
+&lt;h4 id=&quot;url&quot;&gt;url&lt;/h4&gt;
+
+&lt;p&gt;Used to generate absolute urls in &lt;code class=&quot;highlighter-rouge&quot;&gt;sitemap.xml&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;feed.xml&lt;/code&gt;, and for generating canonical URLs in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt;. When developing locally either comment this out or use something like &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt; so all assets load properly. &lt;em&gt;Don’t include a trailing &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://taylantatli.me/Moon&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://localhost:4000&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;//cooldude.github.io&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;reading_time&quot;&gt;reading_time&lt;/h4&gt;
+
+&lt;p&gt;Set true to show reading time for posts. And set &lt;code class=&quot;highlighter-rouge&quot;&gt;words_per_minute&lt;/code&gt;, default is 200.&lt;/p&gt;
+
+&lt;h4 id=&quot;logo&quot;&gt;logo&lt;/h4&gt;
+&lt;p&gt;Your site’s logo. It will show on homepage and navigation menu. Also used for twitter meta tags.&lt;/p&gt;
+
+&lt;h4 id=&quot;background&quot;&gt;background&lt;/h4&gt;
+&lt;p&gt;Image for background. If you don’t set it, color will be used as a background.&lt;/p&gt;
+
+&lt;h4 id=&quot;google-analytics-and-webmaster-tools&quot;&gt;Google Analytics and Webmaster Tools&lt;/h4&gt;
+
+&lt;p&gt;Google Analytics UA and Webmaster Tool verification tags can be entered in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. For more information on obtaining these meta tags check &lt;a href=&quot;http://support.google.com/webmasters/bin/answer.py?hl=en&amp;amp;answer=35179&quot;&gt;Google Webmaster Tools&lt;/a&gt; and &lt;a href=&quot;https://ssl.bing.com/webmaster/configure/verify/ownership&quot;&gt;Bing Webmaster Tools&lt;/a&gt; support.&lt;/p&gt;
+
+&lt;h4 id=&quot;mathjax&quot;&gt;MathJax&lt;/h4&gt;
+&lt;p&gt;It’s enabled. But if you don’t want to use it. Set it false in  &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;disqus-comments&quot;&gt;Disqus Comments&lt;/h4&gt;
+&lt;p&gt;Set your disqus shortname in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; to use comments.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;navigation-links&quot;&gt;Navigation Links&lt;/h3&gt;
+
+&lt;p&gt;To set what links appear in the top navigation edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/navigation.yml&lt;/code&gt;. Use the following format to set the URL and title for as many links as you’d like. &lt;em&gt;External links will open in a new window.&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Home&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Blog&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/blog/&lt;/span&gt;
+
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Projects&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/projects/&lt;/span&gt;
+
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;About&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/about/&lt;/span&gt;
+
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Moon&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://taylantatli.me/Moon&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;layouts-and-content&quot;&gt;Layouts and Content&lt;/h2&gt;
+
+&lt;p&gt;Moon Theme use &lt;a href=&quot;https://github.com/penibelst/jekyll-compress-html&quot;&gt;Jekyll Compress&lt;/a&gt; to compress html output. But it can cause errors if you use “linenos” (line numbers). I suggest don’t use line numbers for codes, because it won’t look good with this theme, also i didn’t give a proper style for them. If you insist to use line numbers, just remove &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: compress&lt;/code&gt; string from layouts. It will disable compressing.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-image&quot;&gt;Feature Image&lt;/h3&gt;
+
+&lt;p&gt;You can set feature image per post. Just add &lt;code class=&quot;highlighter-rouge&quot;&gt;feature: some link&lt;/code&gt; to your post’s front matter.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;feature: /assets/img/some-image.png
+or
+feaure: http://example.com/some-image.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This also will be used for twitter card:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png&quot; alt=&quot;Moon Twitter Card&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;/h3&gt;
+&lt;p&gt;To show disqus comments for your post add &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: true&lt;/code&gt; to your post’s front matter.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;questions&quot;&gt;Questions?&lt;/h2&gt;
+
+&lt;p&gt;Found a bug or aren’t quite sure how something works? By all means &lt;a href=&quot;https://github.com/TaylanTatli/Moon/issues/new&quot;&gt;file a GitHub Issue&lt;/a&gt;. And if you make something cool with this theme feel free to let me know.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Markdown Syntax</title><link href="http://localhost:4000/markdown-syntax/" rel="alternate" type="text/html" title="Markdown Syntax" /><published>2016-03-15T00:00:00-04:00</published><updated>2016-03-15T00:00:00-04:00</updated><id>http://localhost:4000/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/markdown-syntax/">&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
+
+&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+
+&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+
+&lt;h3 id=&quot;body-text&quot;&gt;Body text&lt;/h3&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
+
+&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+
+&lt;p&gt;HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/p&gt;
+
+&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;list-types&quot;&gt;List Types&lt;/h2&gt;
+
+&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Item one
+    &lt;ol&gt;
+      &lt;li&gt;sub item one&lt;/li&gt;
+      &lt;li&gt;sub item two&lt;/li&gt;
+      &lt;li&gt;sub item three&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Item two&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Item one&lt;/li&gt;
+  &lt;li&gt;Item two&lt;/li&gt;
+  &lt;li&gt;Item three&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;table rules=&quot;groups&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
+
+&lt;p&gt;Make any link standout more when applying the &lt;code class=&quot;highlighter-rouge&quot;&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn-success&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Primary Button&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-success&quot;&gt;Success Button&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-warning&quot;&gt;Warning Button&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-danger&quot;&gt;Danger Button&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-info&quot;&gt;Info Button&lt;/a&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;kbd&quot;&gt;KBD&lt;/h2&gt;
+
+&lt;p&gt;You can also use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt; tag for keyboard buttons.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;kbd&amp;gt;&lt;/span&gt;W&lt;span class=&quot;nt&quot;&gt;&amp;lt;/kbd&amp;gt;&amp;lt;kbd&amp;gt;&lt;/span&gt;A&lt;span class=&quot;nt&quot;&gt;&amp;lt;/kbd&amp;gt;&amp;lt;kbd&amp;gt;&lt;/span&gt;S&lt;span class=&quot;nt&quot;&gt;&amp;lt;/kbd&amp;gt;&amp;lt;kbd&amp;gt;&lt;/span&gt;D&lt;span class=&quot;nt&quot;&gt;&amp;lt;/kbd&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Press &lt;kbd&gt;W&lt;/kbd&gt;&lt;kbd&gt;A&lt;/kbd&gt;&lt;kbd&gt;S&lt;/kbd&gt;&lt;kbd&gt;D&lt;/kbd&gt; to move your car. &lt;strong&gt;Midtown Maddness!!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notices&quot;&gt;Notices&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code class=&quot;highlighter-rouge&quot;&gt;{: .notice}&lt;/code&gt; to a paragraph.&lt;/p&gt;</content><author><name></name></author><category term="markdown" /><category term="syntax" /><category term="sample" /><category term="test" /><category term="jekyll" /><summary type="html">Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more.</summary></entry></feed>
