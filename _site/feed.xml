@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T22:46:43-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2017-12-02T00:00:00-05:00</published><updated>2017-12-02T00:00:00-05:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-12T02:25:41-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2018-06-12T00:00:00-04:00</published><updated>2018-06-12T00:00:00-04:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/video.gif&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
@@ -84,7 +84,266 @@ The raw line segments (more than one per lane line) are broken and need to be av
 &lt;/strong&gt;
 &lt;/li&gt; --&gt;
                                 
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(3rd-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(3rd%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(3rd-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">3 Dimensional Rapidly Exploring Random Trees Algorithm on Fetch Robot</title><link href="http://localhost:4000/3D-RRT-Robot-Manipulator/" rel="alternate" type="text/html" title="3 Dimensional Rapidly Exploring Random Trees Algorithm on Fetch Robot" /><published>2018-04-30T00:00:00-04:00</published><updated>2018-04-30T00:00:00-04:00</updated><id>http://localhost:4000/3D-RRT-Robot-Manipulator</id><content type="html" xml:base="http://localhost:4000/3D-RRT-Robot-Manipulator/">&lt;p&gt;&lt;img src=&quot;/assets/img/mp1.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; This project uses Open AI's Robotics Environment for a Motion Planning problem. Rapidly exploring Random Trees (RRT) algorithm is implemented in a 3- Dimensional Space. Motion planing algoritm is implemented in the Fetch Robot Manipulator and the end-effector follows the planned path from a start to goal location. &lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;
+• Implemented 3-Dimensional RRT in a 3D space.&lt;br /&gt;
+• Initiated the space with start and goal location.&lt;br /&gt;
+• Fed the obtained path to the OpenAI’s Gym and made the end    effector follow both the extend and connect version of RRT.&lt;br /&gt;
+• Observed the path followed by the end effector in the space with and without obstacle.&lt;br /&gt;
+• Computed the total cost of both extend and connect path for spaces with and without obstacles.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; We compare the cost of both paths, the generated one and the followed one. Ofcourse, the robot won't take the generated path because it is generated and more complex. It would rather follow a simple path with minimum breaks.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;The figure below shows both, 1. The path randomly generetaed in red, and 2. The path followed in green for 3 dimensional space without any obstacles.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/3drrt1.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The table below shows cost incurred for paths in a 3D space without obstacle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/3drrt1r.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify;&quot;&gt;The figure below shows both, 1. The path randomly generetaed in red, and 2. The path followed in green for 3 dimensional space with obstacle.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/3drrt2.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The table below shows cost incurred for paths in a 3D space with obstacle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/3drrt2r.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul class=&quot;list-inline item-details&quot;&gt;
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Motion Planning</summary></entry><entry><title type="html">Virtual Haptic Environment</title><link href="http://localhost:4000/virtual-haptic-environment/" rel="alternate" type="text/html" title="Virtual Haptic Environment" /><published>2018-04-23T00:00:00-04:00</published><updated>2018-04-23T00:00:00-04:00</updated><id>http://localhost:4000/virtual-haptic-environment</id><content type="html" xml:base="http://localhost:4000/virtual-haptic-environment/">&lt;p&gt;&lt;img src=&quot;/assets/img/dyn.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;With the advancement of technology, robot assisted surgical systems are developed to overcome the limitations of pre-existing minimally-invasive surgical procedures. However, these surgical systems lack real time force feedback during the operation. Haptics and force feedback allow a surgeon to make more controlled movements in simulation and reality, but so far neither has been extensively implemented. This paper aimed to model a virtual gripper to interact with dynamic bodies present in the environment and calculate simulated tip forces to transfer back to the haptic device and subsequently the user. The force feedback produced at the gripper is translated to the haptic device, enabling the user to feel the forces generated at the gripper. The simulated environment, dynamical calculations, and feedback were tested using the haptic device controlling the modelled gripper by holding, moving, and acting upon bodies present in the virtual environment.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;
+The idea of virtual haptic environment for surgical simula-
+tion has been realized through the integration of several open
+source softwares, the most crucial of them being CHAI3D,
+ROS, OpenGL, and Bullet Physics engine. Chai3D is the most
+effective haptic research software which has been integrated
+with ROS to establish communication between the virtual
+haptic environment and the physical haptic devices like da
+vinci , Geomagic Touch and Novint Falcon. The CHAI3D
+library internally uses OpenGL and Bullet physics engine
+to model the computer graphics and simulate the physics
+respectively. A high level OpenGL wrapper library called
+GLFW has been used to develop the modules and virtual
+environments as it allows easy usage of the rather complex
+OpenGL library. The Bullet physics engine was used to model
+the physical interactions between the objects for example in
+the pick and place module discussed in the section IV-C.
+The CHAI3D library automatically identifies the haptic
+devices connected to the computer and spawns the tool in the
+virtual environment which is set while developing the module.
+Specifically for the MTM(master tool manipulator) of DVRK,
+the tool that represents the haptic device in the environment is
+a gripper as shown in Fig. 6. This gripper mimics the MTM
+and can be opened and closed by pinching action performed
+on the MTM. The haptic tool used for the Geomagic touch
+device for the purpose of incision practice is a knife or a thin
+surgical tool as mentioned in section IV-B as the manipulator
+of Geomagic touch is a stylus having 6 Degrees of Freedom.
+For establishing the communication between Novint Fal-
+con and CHAI-ROS bridge, ros-falcon Catkin package was
+installed along with the device drivers. Although CHAI3D
+detects to Novint Falcon automatically, this ROS package
+allows the Falcon to interact with the virtual DVRK as the
+DVRK library has been developed as a ROS package. This
+package allowed the easy manipulability of gripper using the
+Falcon device while receiving accurate haptic feedback. The
+pick and place module discussed in section IV-C relies upon
+the falcon device with the modified gripper design.
+Using the Geomagic touch device with CHAI3D is a
+challenge as the device is old and not supported directly
+by the CHAI3D library. Although there exists procedures to
+install the device kernels for the CHAI environment to detect
+it, we were unsuccessful in doing so because of operating
+system compatibility issues. Also, the native kernel would
+not provide ROS interfacing. To tackle this situation, the
+Geomagic ROS package was installed and a teleoperation
+module was developed from scratch to interface the Geomagic
+touch with the virtual MTML device in the haptic simulation.
+The Geomagic ROS package provides the ROS topics for pose,
+force and twist that were used to establish its communication
+with the MTML as the DVRK ROS package provides similar
+ROS topics. This module aided us in realizing the incision
+practice task as discussed in section IV-B.
+Fig 5 shows the high level architecture of all the developed
+modules tied together establishing communication between the
+devices. The gt talker ROS node interfaces the Geomagic
+touch and virtual MTML kinematics whereas gt force is
+responsible for transmitting the force feedback from the virtual
+environment to the Geomagic Touch physical device. Although
+the kinematics teleoperation worked as expected after scaling
+down the device workspace to fit in the virtual environment,
+the force feedback received was inaccurate and inconsistent
+because of the control law that need to be rewritten in order
+to allow accurate force feedback to the user while using
+Geomagic device in the incision practice module that was
+created in this project.
+The ROS topics at the left-most side shoes the nodes for
+keyboard teleoperation. The chai env node is the main ROS
+node that interfaces CHAI3D with ROS-DVRK that allows the
+haptic devices to interact with the virtual gripper and knife
+tools in the CHAI3D environment.
+The ROS wrapped architecture is highly flexible in terms of
+programming languages and provides lot of useful function-
+alities otherwise unavailable. It allows the inclusion of new
+haptic devices and peripherals to the system easily as ROS
+is language independent middleware and possess the utilities
+required for seamless integration.&lt;/p&gt;
+
+&lt;!-- &lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot;&gt;
+&lt;p style=&quot;text-align: justify&quot;&gt; The results displayed in figures below, depict the average number of steps taken by the robots in order to explore and map the complete maze. It can be observed that the average number of steps reduces exponentially with increase in number of robots. It can also be observed that with increase in number of robots and maze size, the factor of load imbalance comes into picture. While the load imbalance doesn’t represent a particuar trend like Average number of steps, we still can logically deduce that the probability of load imbalance increases with increasing robots. &lt;/p&gt;
+
+![image-title-here](/assets/img/ai_result1.png){:class=&quot;img-responsive width=176 height=71&quot;}  &lt;br/&gt;&lt;br/&gt;
+
+![image-title-here](/assets/img/ai_results2.png){:class=&quot;img-responsive width=176 height=71&quot;}  &lt;br/&gt;&lt;br/&gt;
+
+ 
+
+
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot;&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;We present a problem where a swarm of robots is required to map a maze. We introduce a unique multi-robot approach, which enhances Recursive Backtracking algorithm to the multi-robot case. The average number of steps taken in case of multi robot system as compared to single robot decrease effectively. Another factor of load imbalance i.e. a considerable difference in number of steps taken by individual robots is also observed with increase in size of maze and number of robots. The approach mentioned above, also allowsto map the maze from any starting locations for the robots, thus removing the restriction of starting all robots from a single location in the maze. We hope to scale this maze mapping and shortest path planning algorithm from 2D mazes to 3D mazes that will depict different floors of a multi storey building.&lt;/p&gt; --&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Robot Dynamics</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/scene-recognition/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-12-10T00:00:00-05:00</published><updated>2017-12-10T00:00:00-05:00</updated><id>http://localhost:4000/scene-recognition</id><content type="html" xml:base="http://localhost:4000/scene-recognition/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
+- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
+- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Robot Teleoperation by Inertial Measurement Unit</title><link href="http://localhost:4000/teleoperation-using-imu/" rel="alternate" type="text/html" title="Robot Teleoperation by Inertial Measurement Unit" /><published>2017-12-01T00:00:00-05:00</published><updated>2017-12-01T00:00:00-05:00</updated><id>http://localhost:4000/teleoperation-using-imu</id><content type="html" xml:base="http://localhost:4000/teleoperation-using-imu/">&lt;p&gt;&lt;img src=&quot;/assets/img/imu.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Human safety has always been an issue in hazardous environmental working in any field. To overcome these problems of human safety robot technology can be proved to be a boon. Teleoperation can be a very good way to operate robots from a distance and at the same time keeping the human operator in a safe distant environment. Hence, the most basic way to do this is using an IMU Inertial Measurement Unit, which gives us 9 degrees of freedom. So the flexibility of this particular sensor enables us to operate a robot easily. Our project involves a robot in simulation, which is a 4 degree  freedom arm that is operated by the IMU sensor using an arduino board as our controller. We use the gazebo simulator for our simulation and also the Robot Operating System (ROS) for the communication between the IMU sensor and the robot. The robot uses the IMU signals to move its arm and push an object off the table.&lt;/p&gt;
+
+&lt;h3&gt;Methodology&lt;/h3&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;
+* At first, the arduino collects the sensor data from IMU sensor.&lt;br /&gt;
+* Now, the arduino sketch(c++ code) running on arduino board publish the sensor data in form of a geometry_msg (imu_msg) to the ROS Topic (/team7/imu_data)&lt;br /&gt;
+* The python program (pub_to_arm.py) subscribes to the topic “/team7/imu_data”, processes the data and create a message to publish to the ROS Topic/rrbot/joint1_position_controller/command.&lt;br /&gt;
+* Over the ROS controller package, this message simulates the robot arm movement in Gazebo.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/RBE500_methodology.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul class=&quot;list-inline item-details&quot;&gt;
+                                
+    &lt;li&gt;
+        &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/strong&gt;
+    &lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Foundation of Robotics</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/multi-robot-maze-mapping/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/multi-robot-maze-mapping</id><content type="html" xml:base="http://localhost:4000/multi-robot-maze-mapping/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
@@ -278,111 +537,7 @@ feaure: http://example.com/some-image.png
 
 &lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
 
-&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/moon-theme-(copy)/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2016-03-21T00:00:00-04:00</published><updated>2016-03-21T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
-- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
-- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
-
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;ul id=&quot;horizontal-list&quot;&gt;
-&lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-                                
-&lt;li&gt;
-&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(another-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2016-03-21T00:00:00-04:00</published><updated>2016-03-21T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(another%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(another-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;Swarm robotics nowadays, has become one of the most popular topics among researchers. Maze exploration using swarm robots is a field which has potentially multiple applications in daily life. This project introduces a novel approach to map the maze using a swarm of robots, and further, use this mapped maze to determine the closest path to the goal node depending on the application in which the system is being used. Thus, using an optimized Recursive Backtracking algorithm and a Client-Server Synchronization architecture, we show that using multiple robots to map a large area or maze reduces overall time as well the average number of steps taken by each robot. We also go on to implement A* algorithm on the fully mapped maze to find which robot is nearest to the goal location and&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;Firstly, a valid maze is generated using Depth-First Search Algorithm.
-                            Further, robot follows the undermentioned policy,&lt;br /&gt;
-                            • Each robot starts exploring those cells which have not been previously explored by itself  and any other robots.&lt;br /&gt;
-                            • While exploring, if a robot detects a junction which is a cell with two or more branches, the robot arbitrarily chooses a direction for further exploration and stores the junction as potentially unexplored node.&lt;br /&gt;
-                            • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.&lt;br /&gt;
-                            • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.&lt;br /&gt;
-                            • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt; The results displayed in figures below, depict the average number of steps taken by the robots in order to explore and map the complete maze. It can be observed that the average number of steps reduces exponentially with increase in number of robots. It can also be observed that with increase in number of robots and maze size, the factor of load imbalance comes into picture. While the load imbalance doesn’t represent a particuar trend like Average number of steps, we still can logically deduce that the probability of load imbalance increases with increasing robots. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/ai_result1.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/ai_results2.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;We present a problem where a swarm of robots is required to map a maze. We introduce a unique multi-robot approach, which enhances Recursive Backtracking algorithm to the multi-robot case. The average number of steps taken in case of multi robot system as compared to single robot decrease effectively. Another factor of load imbalance i.e. a considerable difference in number of steps taken by individual robots is also observed with increase in size of maze and number of robots. The approach mentioned above, also allowsto map the maze from any starting locations for the robots, thus removing the restriction of starting all robots from a single location in the maze. We hope to scale this maze mapping and shortest path planning algorithm from 2D mazes to 3D mazes that will depict different floors of a multi storey building.&lt;/p&gt;
-
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;ul id=&quot;horizontal-list&quot;&gt;
-&lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-                                
-&lt;li&gt;
-&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Artificial Intelligence</summary></entry><entry><title type="html">Markdown Syntax</title><link href="http://localhost:4000/markdown-syntax/" rel="alternate" type="text/html" title="Markdown Syntax" /><published>2016-03-15T00:00:00-04:00</published><updated>2016-03-15T00:00:00-04:00</updated><id>http://localhost:4000/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/markdown-syntax/">&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
+&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Markdown Syntax</title><link href="http://localhost:4000/markdown-syntax/" rel="alternate" type="text/html" title="Markdown Syntax" /><published>2016-03-15T00:00:00-04:00</published><updated>2016-03-15T00:00:00-04:00</updated><id>http://localhost:4000/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/markdown-syntax/">&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
 
 &lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 

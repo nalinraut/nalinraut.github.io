@@ -19,7 +19,7 @@ comments: false
 <a class="btn zoombtn" href="{{ site.url }}/education">
 Education
 </a>
-<a class="btn zoombtn" href="{{ site.url }}/about">
+<a class="btn zoombtn" href="{{ site.url }}/profexp">
 Professional Experience
 </a>
 <a class="btn zoombtn" href="{{ site.url }}/perele">

@@ -18,7 +18,7 @@ Master of Science in Robotics Engineering
 GPA: 4.0/4.0</p>
 </center>
 
-<center><h4>----------------------------------------------------------------</h4></center>
+<center><h4>----------------------------------</h4></center>
 ![image-title-here](uop.png){:class="img-responsive width=300 height=152.5"}
 <center>
 <p class="text-dark"><b> University of Pune, Pune, MH, India </b>
