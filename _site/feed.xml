@@ -1,62 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-30T21:56:55-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/moon-theme-(copy)/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-11T22:35:31-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/moon-theme-(another-copy)/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2017-12-02T00:00:00-05:00</published><updated>2017-12-02T00:00:00-05:00</updated><id>http://localhost:4000/moon-theme%20(another%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(another-copy)/">&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/video.gif&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify&quot;&gt; When we drive, we use our eyes to decide where to go. The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle. In this project, I develop an algorithm to detect lane lines automatically.&lt;br /&gt;
+Programming platform and Libraries: Python and OpenCV.&lt;/p&gt;
 
 &lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
-- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
-- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
+&lt;!-- &lt;p style=&quot;text-align: justify&quot;&gt;Firstly, a valid maze is generated using Depth-First Search Algorithm.
+                            Further, robot follows the undermentioned policy,&lt;br/&gt;
+                            • Each robot starts exploring those cells which have not been previously explored by itself  and any other robots.&lt;br/&gt;
+                            • While exploring, if a robot detects a junction which is a cell with two or more branches, the robot arbitrarily chooses a direction for further exploration and stores the junction as potentially unexplored node.&lt;br/&gt;
+                            • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.&lt;br/&gt;
+                            • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.&lt;br/&gt;
+                            • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.&lt;br/&gt;&lt;/p&gt; --&gt;
+&lt;h3 id=&quot;1the-pipeline&quot;&gt;1.The Pipeline&lt;/h3&gt;
+&lt;p&gt;My pipelines consists of the following steps:&lt;/p&gt;
 
-&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
+&lt;h4 id=&quot;i-converting-the-input-image-to-hls-from-rgb&quot;&gt;(i) Converting the input image to HLS from RGB:&lt;/h4&gt;
+&lt;p&gt;The &lt;i&gt;toHLS()&lt;/i&gt; function converts the image to HLS scale and masks the image with yellow and white filters. The HLS       domain takes care of the variation in the lighting conditions.&lt;/p&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/hsv_img.png&quot; alt=&quot;HLS Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;ii-converting-the-hsl-masked-image-to-grayscale&quot;&gt;(ii) Converting the HSL masked image to grayscale:&lt;/h4&gt;
+&lt;p&gt;The image is further converted into an grayscale image.&lt;/p&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/gray_img.png&quot; alt=&quot;Grayscale&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;iii-applying-guassian-blur&quot;&gt;(iii) Applying Guassian Blur:&lt;/h4&gt;
+&lt;p&gt;Further, a Guassian Blur filter with kernel size 15 is used to remove noise.&lt;/p&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/gray_blur.png&quot; alt=&quot;Gaussian Blur&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;iv-perform-canny-edge-detection&quot;&gt;(iv) Perform Canny Edge Detection:&lt;/h4&gt;
+&lt;p&gt;Next the grayscaled image is fed into a canny edge detector and edges are obtained. A double threshold is used (low threshold = 100 and high threshold = 200) with low threshold to high threshold ratio between 1/2 p 1/3 as suggested.&lt;/p&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/edges.png&quot; alt=&quot;Canny&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;v-extract-region-of-interest&quot;&gt;(v) Extract Region of Interest:&lt;/h4&gt;
+&lt;p&gt;Edges are detected all over the image, however, the edges that matter are in a particular region therefore the polygonal region is extracted and only those edges that fall in that region are kept while rest are discarded.&lt;/p&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/roi1.png&quot; alt=&quot;Canny with RoI&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;vi-draw-hough-lines-on-the-edge-image&quot;&gt;(vi) Draw Hough Lines on the Edge Image:&lt;/h4&gt;
+&lt;p&gt;&amp;lt;div class=text-justify&amp;gt; The image with edges is used to draw Hough lines. The function basically converts the points in the image space to lines inthe Hough space. For drawing lines I use the &lt;i&gt;modified_draw_lines()&lt;/i&gt; function to ensure several line segments are extrapolated/ averaged to one line segment per lane line, also ensuring the smoothness.
+The raw line segments (more than one per lane line) are broken and need to be averaged as well as extrapolated and for this, I find the slope of each line segment and further classify the points on the line segments to be part of either positive slope or negative slope. Here the line segments with positive slope belong to the right lane line and line segments with negative slope belong to the left lane line. To fit a line, &lt;i&gt;polyfit()&lt;/i&gt; with 1 degree is used and further the lane lines are drawn. A global list with a fixed length is maintained to which the coordinates are appended. This helps the algorithm to also keep track of previous points. This way, the broken lines can be extrapolated/ averaged to a single line.&amp;lt;/div&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/extrapolated.png&quot; alt=&quot;Extrapolate&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;vii-extract-region-of-interest&quot;&gt;(vii) Extract Region of Interest:&lt;/h4&gt;
+&lt;p&gt;Again, the extrapolated lane lines are drawn on the entire image. To avoid this a region of interest masks the image for the lane lines appear only in the region that matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/final_extrapolate.png&quot; alt=&quot;Extrapolate with RoI&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;viii-weighted-image&quot;&gt;(viii) Weighted Image:&lt;/h4&gt;
+&lt;p&gt;The image with extrpolated lines goes on the original image and forms the final image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/image.jpg&quot; alt=&quot;Final Image&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot;&gt;
+&lt;p style=&quot;text-align: justify&quot;&gt; &lt;/p&gt; --&gt;
 
 &lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
 
-&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
+&lt;p style=&quot;text-align: justify&quot;&gt; This project is a very primitive way of detecting lane lines. The shortcoming of this project is the need to manually tune a number of parameters that can be done using auto-calibration. Also, the algorithm can be improved using a quadratic curve fitting techinique encompassing the edge points. This will provide with better results. &lt;/p&gt;
 
 &lt;hr class=&quot;star-primary&quot; /&gt;
 
 &lt;ul id=&quot;horizontal-list&quot;&gt;
 &lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/CarND-Lane_Lines&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/strong&gt;
 &lt;/li&gt;
                                 
                                 
-&lt;li&gt;
+&lt;!-- &lt;li&gt;
 &lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
 &lt;/strong&gt;
-&lt;/li&gt;
+&lt;/li&gt; --&gt;
                                 
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(another-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(another%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(another-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(3rd-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2017-04-06T00:00:00-04:00</published><updated>2017-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(3rd%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(3rd-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
@@ -250,7 +278,111 @@ feaure: http://example.com/some-image.png
 
 &lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
 
-&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Markdown Syntax</title><link href="http://localhost:4000/markdown-syntax/" rel="alternate" type="text/html" title="Markdown Syntax" /><published>2016-03-15T00:00:00-04:00</published><updated>2016-03-15T00:00:00-04:00</updated><id>http://localhost:4000/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/markdown-syntax/">&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
+&lt;p&gt;This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="moon" /><category term="blog" /><category term="about" /><category term="theme" /><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/moon-theme-(copy)/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2016-03-21T00:00:00-04:00</published><updated>2016-03-21T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
+- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
+- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Multi-Robot Maze Mapping</title><link href="http://localhost:4000/moon-theme-(another-copy)/" rel="alternate" type="text/html" title="Multi-Robot Maze Mapping" /><published>2016-03-21T00:00:00-04:00</published><updated>2016-03-21T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme%20(another%20copy)</id><content type="html" xml:base="http://localhost:4000/moon-theme-(another-copy)/">&lt;p&gt;&lt;img src=&quot;/assets/img/AI_project.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Swarm robotics nowadays, has become one of the most popular topics among researchers. Maze exploration using swarm robots is a field which has potentially multiple applications in daily life. This project introduces a novel approach to map the maze using a swarm of robots, and further, use this mapped maze to determine the closest path to the goal node depending on the application in which the system is being used. Thus, using an optimized Recursive Backtracking algorithm and a Client-Server Synchronization architecture, we show that using multiple robots to map a large area or maze reduces overall time as well the average number of steps taken by each robot. We also go on to implement A* algorithm on the fully mapped maze to find which robot is nearest to the goal location and&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Firstly, a valid maze is generated using Depth-First Search Algorithm.
+                            Further, robot follows the undermentioned policy,&lt;br /&gt;
+                            • Each robot starts exploring those cells which have not been previously explored by itself  and any other robots.&lt;br /&gt;
+                            • While exploring, if a robot detects a junction which is a cell with two or more branches, the robot arbitrarily chooses a direction for further exploration and stores the junction as potentially unexplored node.&lt;br /&gt;
+                            • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.&lt;br /&gt;
+                            • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.&lt;br /&gt;
+                            • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results displayed in figures below, depict the average number of steps taken by the robots in order to explore and map the complete maze. It can be observed that the average number of steps reduces exponentially with increase in number of robots. It can also be observed that with increase in number of robots and maze size, the factor of load imbalance comes into picture. While the load imbalance doesn’t represent a particuar trend like Average number of steps, we still can logically deduce that the probability of load imbalance increases with increasing robots. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai_result1.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/ai_results2.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;We present a problem where a swarm of robots is required to map a maze. We introduce a unique multi-robot approach, which enhances Recursive Backtracking algorithm to the multi-robot case. The average number of steps taken in case of multi robot system as compared to single robot decrease effectively. Another factor of load imbalance i.e. a considerable difference in number of steps taken by individual robots is also observed with increase in size of maze and number of robots. The approach mentioned above, also allowsto map the maze from any starting locations for the robots, thus removing the restriction of starting all robots from a single location in the maze. We hope to scale this maze mapping and shortest path planning algorithm from 2D mazes to 3D mazes that will depict different floors of a multi storey building.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Artificial Intelligence</summary></entry><entry><title type="html">Markdown Syntax</title><link href="http://localhost:4000/markdown-syntax/" rel="alternate" type="text/html" title="Markdown Syntax" /><published>2016-03-15T00:00:00-04:00</published><updated>2016-03-15T00:00:00-04:00</updated><id>http://localhost:4000/markdown-syntax</id><content type="html" xml:base="http://localhost:4000/markdown-syntax/">&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
 
 &lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 

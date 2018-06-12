@@ -1,9 +1,9 @@
 ---
 layout: projects
 title:  "Scene Recognition using Transfer Learning"
-date:   2017-04-06 
 excerpt: "Computer Vision"
 project: true
+duration: "October 2017 - December 2017"
 ---
 
 ![image-title-here](/assets/img/cv1.jpeg){:class="img-responsive width=176 height=71"}   
