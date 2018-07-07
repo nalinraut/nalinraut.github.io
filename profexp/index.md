@@ -22,13 +22,13 @@ comments: false
 <h4>Underactuated Robotic Hand:</h4>
 Developed a 1.2:1 scaled robotic hand that could mimic the movements of a human hand as a part of the company’s research project.
 </p>
-![image-title-here](/assets/img/robolab1.JPG){:class="img-responsive width=90 height=30"} <br/><br/>
 
+![image-title-here](/assets/img/robolab2.JPG){:class="img-responsive width=176 height=71"} <br/><br/>
 <p style="text-align: justify">
 <h4>Miniature Industrial Production System:</h4>
 Developed and designed an entire industrial production system including a 5+1 DOF robotic arm, and fully automated material handling system.
 </p>
-![image-title-here](/assets/img/robolab2.JPG){:class="img-responsive width=176 height=71"} <br/><br/>
+![image-title-here](/assets/img/robolab1.JPG){:class="img-responsive width=90 height=30"} <br/><br/>
 
 <p style="text-align: justify">
 <h4>DrawBot:</h4>
