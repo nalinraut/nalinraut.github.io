@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-12T02:25:41-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2018-06-12T00:00:00-04:00</published><updated>2018-06-12T00:00:00-04:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-10T17:06:16-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2018-06-12T00:00:00-04:00</published><updated>2018-06-12T00:00:00-04:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/video.gif&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
@@ -258,6 +258,64 @@ required for seamless integration.&lt;/p&gt;
 &lt;/li&gt;
                                 
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Robot Dynamics</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/scene-recognition/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-12-10T00:00:00-05:00</published><updated>2017-12-10T00:00:00-05:00</updated><id>http://localhost:4000/scene-recognition</id><content type="html" xml:base="http://localhost:4000/scene-recognition/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
+- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
+- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/face-recognition/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-12-06T00:00:00-05:00</published><updated>2017-12-06T00:00:00-05:00</updated><id>http://localhost:4000/face-recognition</id><content type="html" xml:base="http://localhost:4000/face-recognition/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
