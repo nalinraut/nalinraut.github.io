@@ -1,14 +1,14 @@
 # Site
 title:              Nalin Raut
 bio:                'Robotics Engineering at Worcester Polytechnic Institute'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        Nalin Raut - Portfolio
 reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/nr.jpg'
 
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://nalinraut.info
+url:                www.nalinraut.info
 
 # Jekyll
 permalink:          /:title/
