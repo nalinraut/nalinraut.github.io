@@ -1,8 +1,8 @@
 ---
 layout: projects
-title:  "Finding Lane Lines on Road"
-duration:  "June 2018" 
-excerpt: "Computer Vision"
+title:  "Traffic Sign Classifier"
+duration:  "July 2018" 
+excerpt: "Computer Vision - Deep Learning"
 project: true
 ---
 
