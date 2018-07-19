@@ -15,7 +15,15 @@ project: true
 [image4]: /assets/img/trafficsignclassifier/output_9_2.png
 [image5]: /assets/img/trafficsignclassifier/trade.png
 [image6]: /assets/img/trafficsignclassifier/web.png
-
+[image7]: /assets/img/trafficsignclassifier/1.png
+[image8]: /assets/img/trafficsignclassifier/2.png
+[image9]: /assets/img/trafficsignclassifier/3.png
+[image10]: /assets/img/trafficsignclassifier/4.png
+[image11]: /assets/img/trafficsignclassifier/5.png
+[image12]: /assets/img/trafficsignclassifier/6.png
+[image13]: /assets/img/trafficsignclassifier/7.png
+[image14]: /assets/img/trafficsignclassifier/8.png
+[image15]: /assets/img/trafficsignclassifier/9.png
 ---
 ![Intro][image0]
 <br/>
@@ -32,14 +40,8 @@ Programming platform and Libraries: Python, OpenCV, Tensorflow, Pandas, Pickle.<
 ### Dataset
 
 For this project, I used the German Traffic Sign dataset for classification. Following table illustrates the dataset.
+![Intro][image7]
 
-| Description           		 						   | Value  					|
-|:--------------------------------------------------------:|:---------------------------|
-| The size of training set is    						   | 34799					 	|
-| The size of the validation set is 					   | 4410 				     	|
-| The size of test set is 								   | 12630 				     	|
-| The shape of a traffic sign image is 					   | (32, 32, 3) 		|
-| The number of unique classes/labels in the data set is   | 43 				     	|
 
 
 Following are randomly picked images with their labels each from a different class.
@@ -73,19 +75,7 @@ The image is first normalized to have pixel values between -1.0 to 1.0 and also 
 
 LeNet is a popular classification architecture for digits, traffic signs, etc. My design consists of layers as tabulated below.
 
-| Layer         		|     Description	        					| Input  	| Output 	|
-|:---------------------:|:---------------------------------------------:|:---------:|:---------:|
-| Input         		| 32x32x1 normalized gray scale image   		| 32x32x1   | 32x32x1   | 
-| Convolution 3x3     	| 1x1 stride, VALID padding, activation RELU 	| 32x32x1   | 28x28x48  |
-| Max pooling	      	| 2x2 stride,  2x2 kernel        				| 28x28x48  | 14x14x48  |
-| Convolution 3x3     	| 1x1 stride, VALID padding, activation RELU 	| 14x14x48  | 10x10x96  |
-| Max pooling	      	| 2x2 stride,  2x2 kernel	 					| 10x10x96  | 5x5x96    |
-| Convolution 3x3     	| 1x1 stride, VALID padding, activation RELU 	| 5x5x96    | 3x3x172   |
-| Max pooling	      	| 2x2 stride,  2x2 kernel	 					| 3x3x172   | 2x2x172   |
-| Flatten			    | flattens the the 2D layer to a vector         | 2x2x172   | 688       |
-| Fully connected		| Artificial NN with activation  RELU           | 688       | 84        |
-| Fully connected	    | Artificial NN with softmax probabilities      | 84        | 43        |
-
+![Intro][image8]
 
 #### Training and Validation 
 
@@ -102,13 +92,11 @@ I trained the network model on a local CPU and hence preferred a low batch size 
 LEARNING RATE = 0.001 
 Since Adam optimizer was used, a learning rate of 0.001 is suggested.
 
+<br/>
+
 Following are the accuracies each for the training set, the last validation set and the testing set.
 
-| Set           		 						   | Value  					|
-|:--------------------------------------------------------:|:---------------------------|
-| Training set     						   	   | 0.997					 	|
-| Validation set  					           | 0.938 				     	|
-| Test set  					                   | 0.929						|
+![Intro][image9]
 
 The graph below shows a trade off between the training and validation accuracies considering the number of episodes run.
 
@@ -122,66 +110,30 @@ I picked the following 5 unknown images for testing.
 
 The prediction for the images are tabulated as follows :
 
-| Image			        |     Prediction	| 
-|:-----------------------------:|:---------------------:| 
-| Keep right    		| Keep right  		| 
-| Stop     			| Stop 	                |	
-| Speed limit (30km/h)		| Speed limit (30km/h)  |
-| Pedestrians 		        | General caution	|
-| No entry			| No entry      	|
+![Intro][image10]
 
 
 The probabilities for individual labels for each image are as follows :
 
-1. Image 1 - Keep Right
+#### 1. Image 1 - Keep Right
 
-| Labels		        |     Probability	| 
-|:-----------------------------:|:---------------------:| 
-| Keep right    		| 1.00 %  		| 
-| Speed limit (50km/h) 		| 0.00 %                |	
-| Yield				| 0.00 %  		|
-| Speed limit (30km/h)	        | 0.00 %		|
-| Priority road			| 0.00 %	      	|
+![Intro][image11]
 
-2. Image 2 - Stop
+#### 2. Image 2 - Stop
 
-| Labels		        |     Probability	| 
-|:-----------------------------:|:---------------------:| 
-| Stop	        | 1.00 %		|
-| Go straight or right		| 0.00 %	      	|
-| Road work	        | 0.00 %		|
-| Turn right ahead	        | 0.00 %		|
-| Priority road	        | 0.00 %		|
+![Intro][image12]
 
-3. Image 3 - Speed limit (30km/h)
+#### 3. Image 3 - Speed limit (30km/h)
 
-| Labels		        |     Probability	| 
-|:-----------------------------:|:---------------------:| 
-| Speed limit (30km/h)	        | 1.00 %		|
-| Road work		| 0.00 %	      	|
-| Speed limit (20km/h)	        | 0.00 %		|
-| Speed limit (50km/h)	        | 0.00 %		|
-| Speed limit (80km/h)	        | 0.00 %		|
+![Intro][image13]
 
-4. Image 4 - Pedestrians
+#### 4. Image 4 - Pedestrians
 
-| Labels		        |     Probability	| 
-|:-----------------------------:|:---------------------:| 
-| General caution	        | 0.55 %		|
-| Roundabout mandatory		| 0.45 %	      	|
-| Pedestrians	        | 0.00 %		|
-| End of speed limit (80km/h)	        | 0.00 %		|
-| Priority road	        | 0.00 %		|
+![Intro][image14]
 
-5. Image 5 - No entry
+#### 5. Image 5 - No entry
 
-| Labels		        |     Probability	| 
-|:-----------------------------:|:---------------------:| 
-| No entry	        | 1.00 %		|
-| Stop 		| 0.00 %	      	|
-| Turn right ahead	        | 0.00 %		|
-| Turn left ahead	        | 0.00 %		|
-| No passing	        | 0.00 %		|
+![Intro][image15]
 
 
 
