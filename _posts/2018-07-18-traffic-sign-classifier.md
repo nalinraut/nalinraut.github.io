@@ -142,7 +142,7 @@ The probabilities for individual labels for each image are as follows :
 <center><h3>Conclusion</h3></center>
 <hr class="star-primary">
 
-<p style="text-align: justify"> This project uses an architecture similar to LeNet for training purpose. An accuracy of 92.90 is obtained for the test set. The accuracy can be improved using batch normalization after every convolutional layer in the neural network model.  </p>
+<p style="text-align: justify"> This project uses an architecture similar to LeNet for training purpose. An accuracy of 92.90% is obtained for the test set. The accuracy can be improved using batch normalization after every convolutional layer in the neural network model.  </p>
 
 <hr class="star-primary">
                             
