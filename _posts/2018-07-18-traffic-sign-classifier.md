@@ -91,9 +91,16 @@ LeNet is a popular classification architecture for digits, traffic signs, etc. M
 
 As mentioned earlier the images are trained in batches. EPOCHS or episodes are run with asingle batch trained in it. Following are the parameters used for training.
 
-EPOCHS        = 17    ................. After running 17 epochs there is no significant or no improvement in the accuracy. 
-BATCH_SIZE    = 128   ................. I trained the network model on a local CPU and hence preferred a low batch size of 128 images per batch.
-LEARNING RATE = 0.001 ................. Since Adam optimizer was used, a learning rate of 0.001 is suggested.
+EPOCHS = 17 
+After running 17 epochs there is no significant or no improvement in the accuracy.
+
+<br/> 
+BATCH_SIZE    = 128
+I trained the network model on a local CPU and hence preferred a low batch size of 128 images per batch.
+
+<br/>
+LEARNING RATE = 0.001 
+Since Adam optimizer was used, a learning rate of 0.001 is suggested.
 
 Following are the accuracies each for the training set, the last validation set and the testing set.
 
@@ -166,7 +173,7 @@ The probabilities for individual labels for each image are as follows :
 | End of speed limit (80km/h)	        | 0.00 %		|
 | Priority road	        | 0.00 %		|
 
-4. Image 5 - No entry
+5. Image 5 - No entry
 
 | Labels		        |     Probability	| 
 |:-----------------------------:|:---------------------:| 
