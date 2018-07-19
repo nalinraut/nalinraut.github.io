@@ -36,7 +36,7 @@ Programming platform and Libraries: Python and OpenCV.</p>
                             • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.<br/>
                             • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.<br/>
                             • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.<br/></p> -->
-### 1.The Pipeline
+### The Pipeline
 My pipelines consists of the following steps:
 
 #### (i) Converting the input image to HLS from RGB: 
