@@ -45,15 +45,15 @@ project: true
                             
 <ul id ="horizontal-list">
 <li class="display: inline">
-<strong><a target="_blank"  href="https://github.com/nalinraut/Indoor-Scene-Recognition">Code Repository Link <i class="fa fa-fw fa-github"></i></a>
+<strong><a target="_blank"  href="https://github.com/nalinraut/Multi-Robot-Maze-Mapping">Code Repository Link <i class="fa fa-fw fa-github"></i></a>
 </strong>
 </li>
                                 
                                 
-<li>
+<!-- <li>
 <strong><a href="javascript:void(0);">Project-Report</a>
 </strong>
-</li>
+</li> -->
                                 
 </ul>
      
