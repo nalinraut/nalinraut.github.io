@@ -50,11 +50,11 @@ duration: "April 2017 - May 2017"
 <ul class="list-inline item-details">
                                 
 <li>
-<strong><a target="_blank"  href="https://github.com/nalinraut/Indoor-Scene-Recognition">Code Repository Link <i class="fa fa-fw fa-github"></i></a>
+<strong><a target="_blank"  href="https://github.com/nalinraut/Planning-Algorithms/tree/master/3D_RRT">Code Repository Link <i class="fa fa-fw fa-github"></i></a>
 </strong>
 </li>
 <li>
-<strong><a href="javascript:void(0);">Project-Report</a>
+<strong><a href="https://github.com/nalinraut/Planning-Algorithms/blob/master/3D_RRT/Report.pdf">Project-Report</a>
 </strong>
 </li>
 </ul>
