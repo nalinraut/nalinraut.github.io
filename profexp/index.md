@@ -5,16 +5,7 @@ tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
-![image-title-here](rob.jpg){:class="img-responsive width=176 height=71"}               
-                
-<center>
-<p class="text-dark"><b> <br/>Robolab Technologies, Pune, MH, India </b>
-                <br/>
-                Research and Development Engineer, July 2016 - June 2017
-                <br/>
-                <br/>
-</p>
-</center>
+
 
 <!-- <a class="text-dark" href="">Testimonial</a></p> -->
 <!-- </center> -->
@@ -38,13 +29,11 @@ Developed and designed an entire industrial production system including a 5+1 DO
 Developed a mini drawing robot with a workspace of 50mm X 50mm X 50mm as a fulfilment towards customer requirement.
 </p> -->
 
-<hr class="star-primary">
-<br/>
-<br/>
+<center>
 
 ![image-title-here](greensightag.png){:class="img-responsive width=176 height=71"}               
                 
-<center>
+
 <p class="text-dark"><b> <br/>Greensight Agronomics, Boston, MA, USA </b>
                 <br/>
                 Software Engineer in Training - Perception | Planning, October 2018 - Present
@@ -52,8 +41,20 @@ Developed a mini drawing robot with a workspace of 50mm X 50mm X 50mm as a fulfi
                 <br/>
                 <!-- <a class="text-dark" href="">Testimonial</a></p> -->
 
+<hr class="star-primary">
+<br/>
+<br/>
 
+![image-title-here](rob.jpg){:class="img-responsive width=176 height=71"}               
+                
 
+<p class="text-dark"><b> <br/>Robolab Technologies, Pune, MH, India </b>
+                <br/>
+                Research and Development Engineer, July 2016 - June 2017
+                <br/>
+                <br/>
+</p>
+</center>
        
 
 
