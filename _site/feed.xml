@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-10T17:06:16-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Moon is a minimal, one column jekyll theme for your blog.</subtitle><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2018-06-12T00:00:00-04:00</published><updated>2018-06-12T00:00:00-04:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-16T16:32:46-04:00</updated><id>http://localhost:4000/</id><title type="html">Nalin Raut</title><subtitle>Nalin Raut</subtitle><entry><title type="html">Traffic Sign Classifier</title><link href="http://localhost:4000/traffic-sign-classifier/" rel="alternate" type="text/html" title="Traffic Sign Classifier" /><published>2018-07-18T00:00:00-04:00</published><updated>2018-07-18T00:00:00-04:00</updated><id>http://localhost:4000/traffic-sign-classifier</id><content type="html" xml:base="http://localhost:4000/traffic-sign-classifier/">&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/intro.jpg&quot; alt=&quot;Intro&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; It is extremely necessary for a self-driving car to perceive all the traffic indications, mostly conveyed through traffic signs and act/ drive accordingly. In this project, I develop an algorithm to classify traffic signs.The project uses German Traffic Sign dataset. &lt;br /&gt;
+Programming platform and Libraries: Python, OpenCV, Tensorflow, Pandas, Pickle.&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Methodology and Results &lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;h3 id=&quot;dataset&quot;&gt;Dataset&lt;/h3&gt;
+
+&lt;p&gt;For this project, I used the German Traffic Sign dataset for classification. Following table illustrates the dataset.
+&lt;img src=&quot;/assets/img/trafficsignclassifier/1.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Following are randomly picked images with their labels each from a different class.
+&lt;img src=&quot;/assets/img/trafficsignclassifier/output_8_0.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;training-set&quot;&gt;Training Set&lt;/h4&gt;
+
+&lt;p&gt;The figure below illustrates number of image samples per class in the training set.
+&lt;img src=&quot;/assets/img/trafficsignclassifier/output_9_0.png&quot; alt=&quot;Training Samples&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;validation-set&quot;&gt;Validation Set&lt;/h4&gt;
+
+&lt;p&gt;The figure below illustrates number of image samples per class in the validation set.
+&lt;img src=&quot;/assets/img/trafficsignclassifier/output_9_1.png&quot; alt=&quot;Validation Samples&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;testing-set&quot;&gt;Testing Set&lt;/h4&gt;
+
+&lt;p&gt;The figure below illustrates number of image samples per class in the testing set.
+&lt;img src=&quot;/assets/img/trafficsignclassifier/output_9_2.png&quot; alt=&quot;Testing Samples&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;image-pre-processing&quot;&gt;Image Pre-processing&lt;/h3&gt;
+
+&lt;p&gt;The image is first normalized to have pixel values between -1.0 to 1.0 and also have zero mean. The images are trained relatively faster with the normalization.  Further, the image is converted to a grayscale color space from RGB color space. This reduces the breadth of the layering. The images are trained in batches and each batch consists of images shuffled to eliminate any bias.&lt;/p&gt;
+
+&lt;h3 id=&quot;model-architecture&quot;&gt;Model Architecture&lt;/h3&gt;
+
+&lt;h4 id=&quot;design&quot;&gt;Design&lt;/h4&gt;
+
+&lt;p&gt;LeNet is a popular classification architecture for digits, traffic signs, etc. My design consists of layers as tabulated below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/2.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;training-and-validation&quot;&gt;Training and Validation&lt;/h4&gt;
+
+&lt;p&gt;As mentioned earlier the images are trained in batches. EPOCHS or episodes are run with asingle batch trained in it. Following are the parameters used for training.&lt;/p&gt;
+
+&lt;p&gt;EPOCHS = 17 
+After running 17 epochs there is no significant or no improvement in the accuracy.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; 
+BATCH_SIZE    = 128
+I trained the network model on a local CPU and hence preferred a low batch size of 128 images per batch.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+LEARNING RATE = 0.001 
+Since Adam optimizer was used, a learning rate of 0.001 is suggested.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Following are the accuracies each for the training set, the last validation set and the testing set.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/3.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The graph below shows a trade off between the training and validation accuracies considering the number of episodes run.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/trade.png&quot; alt=&quot;Testing Samples&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;testing-on-unknown-images&quot;&gt;Testing on Unknown Images&lt;/h3&gt;
+
+&lt;p&gt;I picked the following 5 unknown images for testing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/web.png&quot; alt=&quot;Testing Samples&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The prediction for the images are tabulated as follows :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/4.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The probabilities for individual labels for each image are as follows :&lt;/p&gt;
+
+&lt;h4 id=&quot;1-image-1---keep-right&quot;&gt;1. Image 1 - Keep Right&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/5.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2-image-2---stop&quot;&gt;2. Image 2 - Stop&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/6.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3-image-3---speed-limit-30kmh&quot;&gt;3. Image 3 - Speed limit (30km/h)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/7.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4-image-4---pedestrians&quot;&gt;4. Image 4 - Pedestrians&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/8.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-image-5---no-entry&quot;&gt;5. Image 5 - No entry&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/trafficsignclassifier/9.png&quot; alt=&quot;Intro&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;p style=&quot;text-align: justify&quot;&gt; This project uses an architecture similar to LeNet for training purpose. An accuracy of 92.90% is obtained for the test set. The accuracy can be improved using batch normalization after every convolutional layer in the neural network model.  &lt;/p&gt;
+
+&lt;hr class=&quot;star-primary&quot; /&gt;
+
+&lt;ul id=&quot;horizontal-list&quot;&gt;
+&lt;li class=&quot;display: inline&quot;&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/CarND-Traffic_Sign_Classifier&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt;
+                                
+                                
+&lt;!-- &lt;li&gt;
+&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;/strong&gt;
+&lt;/li&gt; --&gt;
+                                
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision - Deep Learning</summary></entry><entry><title type="html">Finding Lane Lines on Road</title><link href="http://localhost:4000/finding-lane-lines/" rel="alternate" type="text/html" title="Finding Lane Lines on Road" /><published>2018-06-12T00:00:00-04:00</published><updated>2018-06-12T00:00:00-04:00</updated><id>http://localhost:4000/finding-lane-lines</id><content type="html" xml:base="http://localhost:4000/finding-lane-lines/">&lt;hr /&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/video.gif&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
@@ -17,7 +140,7 @@ Programming platform and Libraries: Python and OpenCV.&lt;/p&gt;
                             • While exploring the maze, if the robot encounters a dead-end or enters a cell already explored by another robot, the robot back-tracks to the nearest unexplored cell.&lt;br/&gt;
                             • All robots continue their exploration until all potentially unexplored cells in their respective lists are visited.&lt;br/&gt;
                             • Since all robots are continuously communicating with the common server, they get the completely mapped maze in the end which will further be used to travel to the goal node.&lt;br/&gt;&lt;/p&gt; --&gt;
-&lt;h3 id=&quot;1the-pipeline&quot;&gt;1.The Pipeline&lt;/h3&gt;
+&lt;h3 id=&quot;the-pipeline&quot;&gt;The Pipeline&lt;/h3&gt;
 &lt;p&gt;My pipelines consists of the following steps:&lt;/p&gt;
 
 &lt;h4 id=&quot;i-converting-the-input-image-to-hls-from-rgb&quot;&gt;(i) Converting the input image to HLS from RGB:&lt;/h4&gt;
@@ -46,8 +169,8 @@ Programming platform and Libraries: Python and OpenCV.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/roi1.png&quot; alt=&quot;Canny with RoI&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;vi-draw-hough-lines-on-the-edge-image&quot;&gt;(vi) Draw Hough Lines on the Edge Image:&lt;/h4&gt;
-&lt;p&gt;&amp;lt;div class=text-justify&amp;gt; The image with edges is used to draw Hough lines. The function basically converts the points in the image space to lines inthe Hough space. For drawing lines I use the &lt;i&gt;modified_draw_lines()&lt;/i&gt; function to ensure several line segments are extrapolated/ averaged to one line segment per lane line, also ensuring the smoothness.
-The raw line segments (more than one per lane line) are broken and need to be averaged as well as extrapolated and for this, I find the slope of each line segment and further classify the points on the line segments to be part of either positive slope or negative slope. Here the line segments with positive slope belong to the right lane line and line segments with negative slope belong to the left lane line. To fit a line, &lt;i&gt;polyfit()&lt;/i&gt; with 1 degree is used and further the lane lines are drawn. A global list with a fixed length is maintained to which the coordinates are appended. This helps the algorithm to also keep track of previous points. This way, the broken lines can be extrapolated/ averaged to a single line.&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;The image with edges is used to draw Hough lines. The function basically converts the points in the image space to lines inthe Hough space. For drawing lines I use the &lt;i&gt;modified_draw_lines()&lt;/i&gt; function to ensure several line segments are extrapolated/ averaged to one line segment per lane line, also ensuring the smoothness.
+The raw line segments (more than one per lane line) are broken and need to be averaged as well as extrapolated and for this, I find the slope of each line segment and further classify the points on the line segments to be part of either positive slope or negative slope. Here the line segments with positive slope belong to the right lane line and line segments with negative slope belong to the left lane line. To fit a line, &lt;i&gt;polyfit()&lt;/i&gt; with 1 degree is used and further the lane lines are drawn. A global list with a fixed length is maintained to which the coordinates are appended. This helps the algorithm to also keep track of previous points. This way, the broken lines can be extrapolated/ averaged to a single line.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/lanelines/extrapolated.png&quot; alt=&quot;Extrapolate&quot; /&gt;&lt;/p&gt;
 
@@ -131,11 +254,11 @@ The raw line segments (more than one per lane line) are broken and need to be av
 &lt;ul class=&quot;list-inline item-details&quot;&gt;
                                 
 &lt;li&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Planning-Algorithms/tree/master/3D_RRT&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/strong&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;https://github.com/nalinraut/Planning-Algorithms/blob/master/3D_RRT/Report.pdf&quot;&gt;Project-Report&lt;/a&gt;
 &lt;/strong&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Motion Planning</summary></entry><entry><title type="html">Virtual Haptic Environment</title><link href="http://localhost:4000/virtual-haptic-environment/" rel="alternate" type="text/html" title="Virtual Haptic Environment" /><published>2018-04-23T00:00:00-04:00</published><updated>2018-04-23T00:00:00-04:00</updated><id>http://localhost:4000/virtual-haptic-environment</id><content type="html" xml:base="http://localhost:4000/virtual-haptic-environment/">&lt;p&gt;&lt;img src=&quot;/assets/img/dyn.gif&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
@@ -247,75 +370,17 @@ required for seamless integration.&lt;/p&gt;
 
 &lt;ul id=&quot;horizontal-list&quot;&gt;
 &lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/daVinci_haptics&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/strong&gt;
 &lt;/li&gt;
                                 
                                 
-&lt;li&gt;
+&lt;!-- &lt;li&gt;
 &lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
 &lt;/strong&gt;
-&lt;/li&gt;
+&lt;/li&gt; --&gt;
                                 
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Robot Dynamics</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/scene-recognition/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-12-10T00:00:00-05:00</published><updated>2017-12-10T00:00:00-05:00</updated><id>http://localhost:4000/scene-recognition</id><content type="html" xml:base="http://localhost:4000/scene-recognition/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;The project includes scene recognition including different scene categories such as: Kitchen, Bedroom, and Corridor. Furthermore, implementing different classification techniques and comparing them is also part of our study. The project attempts to solve this problem using Convolutional Neural Networks. This project also utilizes and compares various approaches such as Transfer Learning and the bag-of-words model for the purpose of indoor scene recognition.&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Methodology&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;- Implemented Transfer Learning using a pre-trained Convolutional Neural Network. &lt;br /&gt; 
-- Additionally, designed a Convolutional Neural Network model from scratch in MATLAB &lt;br /&gt;
-- Compared the above mentioned approaches, earlier implemented Nearest Neighbour and SVM classifier approaches.&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Results&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt; The results of the study are listed in the table below. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/tabular_CV.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;I. Confusion Matrix (Bag of Features with Nearest Neighbor Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with Nearest Neighbor Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_NN.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;II. Confusion Matrix (Bag of Features with SVM Classifier). The figure below shows confusion matrix for scene classification using Bag of Features with SVM Classifier: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/BoW_SVM.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;III. Confusion Matrix (CNN built from scratch). The figure below shows confusion matrix for scene classification using CNN designed from scratch : &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_scratch.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;IV. Confusion Matrix (Transfer Learning with a Pre-Trained CNN). The figure below shows confusion matrix for scene classification using Transfer Learning with a pre-trained network.: &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/CNN_TL.png&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;/center&gt;
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;p style=&quot;text-align: justify&quot;&gt;Through this project, we learned all about the intricacies of convolutional neural networks and their use in image recognition tasks. Based on the comparative results, we concluded that Neural Networks perform better than other classification methods used in this project for the purpose of indoor scene recognition. We also saw that the bag-of-words model was more confident in classifying images from the kitchen, whereas the CNNs were most confident about classifying corridors. Another important observation was that to improve the accuracy of CNNs, a huge dataset of objects or scenes is required.&lt;/p&gt;
-
-&lt;hr class=&quot;star-primary&quot; /&gt;
-
-&lt;ul id=&quot;horizontal-list&quot;&gt;
-&lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-                                
-&lt;li&gt;
-&lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
-&lt;/strong&gt;
-&lt;/li&gt;
-                                
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Computer Vision</summary></entry><entry><title type="html">Scene Recognition using Transfer Learning</title><link href="http://localhost:4000/face-recognition/" rel="alternate" type="text/html" title="Scene Recognition using Transfer Learning" /><published>2017-12-06T00:00:00-05:00</published><updated>2017-12-06T00:00:00-05:00</updated><id>http://localhost:4000/face-recognition</id><content type="html" xml:base="http://localhost:4000/face-recognition/">&lt;p&gt;&lt;img src=&quot;/assets/img/cv1.jpeg&quot; alt=&quot;image-title-here&quot; class=&quot;img-responsive width=176 height=71&quot; /&gt; &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;h3&gt;Description&lt;/h3&gt;&lt;/center&gt;
 &lt;hr class=&quot;star-primary&quot; /&gt;
@@ -437,15 +502,15 @@ required for seamless integration.&lt;/p&gt;
 
 &lt;ul id=&quot;horizontal-list&quot;&gt;
 &lt;li class=&quot;display: inline&quot;&gt;
-&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Indoor-Scene-Recognition&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/nalinraut/Multi-Robot-Maze-Mapping&quot;&gt;Code Repository Link &lt;i class=&quot;fa fa-fw fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/strong&gt;
 &lt;/li&gt;
                                 
                                 
-&lt;li&gt;
+&lt;!-- &lt;li&gt;
 &lt;strong&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Project-Report&lt;/a&gt;
 &lt;/strong&gt;
-&lt;/li&gt;
+&lt;/li&gt; --&gt;
                                 
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Artificial Intelligence</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="http://localhost:4000/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00-04:00</published><updated>2016-04-06T00:00:00-04:00</updated><id>http://localhost:4000/moon-theme</id><content type="html" xml:base="http://localhost:4000/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
 

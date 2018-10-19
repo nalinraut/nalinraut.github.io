@@ -13,10 +13,13 @@ comments: false
                 Research and Development Engineer, July 2016 - June 2017
                 <br/>
                 <br/>
-                <a class="text-dark" href="">Testimonial</a></p>
+</p>
 </center>
 
-<center><h3>Projects at Robolab Technologies</h3></center>
+<!-- <a class="text-dark" href="">Testimonial</a></p> -->
+<!-- </center> -->
+
+<!-- <center><h3>Projects at Robolab Technologies</h3></center>
 <hr class="star-primary">
 <p style="text-align: justify">
 <h4>Underactuated Robotic Hand:</h4>
@@ -33,10 +36,21 @@ Developed and designed an entire industrial production system including a 5+1 DO
 <p style="text-align: justify">
 <h4>DrawBot:</h4>
 Developed a mini drawing robot with a workspace of 50mm X 50mm X 50mm as a fulfilment towards customer requirement.
-</p>
+</p> -->
 
+<hr class="star-primary">
+<br/>
+<br/>
 
-
+![image-title-here](greensightag.png){:class="img-responsive width=176 height=71"}               
+                
+<center>
+<p class="text-dark"><b> <br/>Greensight Agronomics, Boston, MA, USA </b>
+                <br/>
+                Software Engineer in Training - Perception | Planning, October 2018 - Present
+                <br/>
+                <br/>
+                <!-- <a class="text-dark" href="">Testimonial</a></p> -->
 
 
 

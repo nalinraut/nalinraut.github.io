@@ -17,10 +17,6 @@
 <lastmod>2017-12-01T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/face-recognition/</loc>
-<lastmod>2017-12-06T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/scene-recognition/</loc>
 <lastmod>2017-12-10T00:00:00-05:00</lastmod>
 </url>
@@ -35,6 +31,13 @@
 <url>
 <loc>http://localhost:4000/finding-lane-lines/</loc>
 <lastmod>2018-06-12T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/traffic-sign-classifier/</loc>
+<lastmod>2018-07-18T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2017-12-06-face-recognition%20/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/404</loc>
