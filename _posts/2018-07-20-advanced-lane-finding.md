@@ -8,20 +8,20 @@ project: true
 
 [//]: # (Image References)
 
-[image1]: ./assets/img/lanefinding/project_video.gif "Final Output"
-[image2]: ./assets/img/lanefinding/calibration.png "Process of camera calibration."
-[image3]: ./assets/img/lanefinding/undistorted.png "Original and Undistorted Images."
-[image4]: ./assets/img/lanefinding/warped.png "Warped and Unwarped Images."
-[image5]: ./assets/img/lanefinding/threshold.png "Combined gradient and color threshold."
-[image6]: ./assets/img/lanefinding/histogram.png "Histogram"
-[image7]: ./assets/img/lanefinding/windows.png "Sliding Window"
-[image8]: ./assets/img/lanefinding/lane.png "Lane"
+[image1]: /assets/img/lanefinding/project_video.gif "Final Output"
+[image2]: /assets/img/lanefinding/calibration.png "Process of camera calibration."
+[image3]: /assets/img/lanefinding/undistorted.png "Original and Undistorted Images."
+[image4]: /assets/img/lanefinding/warped.png "Warped and Unwarped Images."
+[image5]: /assets/img/lanefinding/threshold.png "Combined gradient and color threshold."
+[image6]: /assets/img/lanefinding/histogram.png "Histogram"
+[image7]: /assets/img/lanefinding/windows.png "Sliding Window"
+[image8]: /assets/img/lanefinding/lane.png "Lane"
 
-[image9]: ./assets/img/lanefinding/curve.png "curve"
+[image9]: /assets/img/lanefinding/curve.png "curve"
 
-[image10]: ./assets/img/lanefinding/test2.png "test"
-[image11]: ./assets/img/lanefinding/test3.png "test"
-[image12]: ./assets/img/lanefinding/test3.png "test"
+[image10]: /assets/img/lanefinding/test2.png "test"
+[image11]: /assets/img/lanefinding/test3.png "test"
+[image12]: /assets/img/lanefinding/test3.png "test"
 
 ---
 ![][image1]
