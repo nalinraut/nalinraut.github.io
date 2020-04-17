@@ -40,7 +40,7 @@ body {
 	width: 100%;
 	min-height: 300px;
 	text-align: left;
-	color: $white;
+	color: rgba(255, 255, 255, 80);
 	@media #{$small} {
 		display: block !important;
 	}
