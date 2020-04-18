@@ -226,6 +226,9 @@ header .entry-meta {
 
 $animation-delay: .7s;
 $li-padding: 5px;
+// colors
+$background-color: #1a1a1a;
+$progressbar-title-color: #fff;
 
 @mixin border-radius($radius){
   -webkit-border-radius: $radius;
