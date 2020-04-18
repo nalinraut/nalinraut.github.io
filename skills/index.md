@@ -5,7 +5,10 @@ tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
-
+<html>
+<body>
+<center>
+    
 <ul class="skills-bar-container">
   
   <li>
@@ -58,12 +61,6 @@ comments: false
   </li>
   
 </ul>
-
-<html>
-<body>
-<center>
-      
-
 
 </center>
 </body>
