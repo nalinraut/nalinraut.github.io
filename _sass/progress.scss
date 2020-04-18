@@ -40,7 +40,7 @@ $animation-delay: .7s;
 // }
 
 .skills-bar-container{
-  //position: relative;
+  position: relative;
   //width: 40%;
   //min-width: 300px;
   //top: 50%;
@@ -52,7 +52,7 @@ $animation-delay: .7s;
   li{
     //position: relative;
     //width: 100%;
-    //padding: $li-padding;
+    padding: $li-padding;
     margin-bottom: 10px;
     
     .progressbar-title{
