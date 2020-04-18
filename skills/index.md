@@ -99,8 +99,7 @@ comments: false
       </div>
     </div>
 
-
-<!-- <div class="col-lg-4 col-md-6 text-center">
+ <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box">
                     <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Programming Languages</h3>
@@ -128,5 +127,5 @@ comments: false
             </div>
             
         </div>
-    </div>  -->
+    </div> 
 </section>
