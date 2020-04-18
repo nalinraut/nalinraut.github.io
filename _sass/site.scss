@@ -230,12 +230,12 @@ $li-padding: 5px;
 $background-color: #1a1a1a;
 $progressbar-title-color: #fff;
 
-@mixin border-radius($radius){
-//   -webkit-border-radius: $radius;
-//      -moz-border-radius: $radius;
-//       -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+// @mixin border-radius($radius){
+// //   -webkit-border-radius: $radius;
+// //      -moz-border-radius: $radius;
+// //       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
 
 .skills-bar-container{
   position: relative;
