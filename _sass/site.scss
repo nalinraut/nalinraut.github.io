@@ -40,7 +40,7 @@ body {
 	width: 100%;
 	min-height: 300px;
 	text-align: left;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.5);
 	@media #{$small} {
 		display: block !important;
 	}
@@ -76,7 +76,7 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.5);
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;

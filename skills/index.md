@@ -8,11 +8,11 @@ comments: false
 <html>
 <body>
 <div class="skills-bar-container"> 
-<h3> Programming Languages</h3>
+<h2> Programming Languages</h2>
 <ul>
   <li>
     <div class="progressbar-title">
-      <h5>C/CPP-OOPs</h5>
+      <h3>C/CPP-OOPs</h3>
       <span class="percent" id="cpp-pourcent"></span>
     </div>
     <div class="bar-container">
@@ -48,6 +48,39 @@ comments: false
       <span class="progressbar progressorange" id="progress-php"></span>
     </div>
   </li>
+
+  <h2> Software Framework</h2>
+<ul>
+  <li>
+    <div class="progressbar-title">
+      <h3>C/CPP-OOPs</h3>
+      <span class="percent" id="ros-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressred" id="progress-cpp"></span>
+    </div>
+  </li>
+  <li>
+    <div class="progressbar-title">
+      <h3>CSS / SASS</h3>
+      <span class="percent" id="matlab-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressblue" id="progress-css"></span>
+    </div>
+  </li>
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>JavaScript / jQuery</h3>
+      <span class="percent" id="zmq-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progresspurple" id="progress-javascript"></span>
+    </div>
+  </li>
+  
+
 
   
 </ul>
