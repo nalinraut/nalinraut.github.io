@@ -26,58 +26,69 @@ comments: false
         </div>
     </div>
 
+
+<div class="container">
+    <div class="row">
+    <div class="col-lg-4 col-md-6 text-center">
+    <div class="service-box">
 <ul class="skills-bar-container">
-  
-  <li>
+
+<li>
     <div class="progressbar-title">
-      <h3>HTML5</h3>
-      <span class="percent" id="html-pourcent"></span>
+    <h3>HTML5</h3>
+    <span class="percent" id="html-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressred" id="progress-html"></span>
+    <span class="progressbar progressred" id="progress-html"></span>
     </div>
-  </li>
-  <li>
+</li>
+<li>
     <div class="progressbar-title">
-      <h3>CSS / SASS</h3>
-      <span class="percent" id="css-pourcent"></span>
+    <h3>CSS / SASS</h3>
+    <span class="percent" id="css-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressblue" id="progress-css"></span>
+    <span class="progressbar progressblue" id="progress-css"></span>
     </div>
-  </li>
-  
-  <li>
+</li>
+
+<li>
     <div class="progressbar-title">
-      <h3>JavaScript / jQuery</h3>
-      <span class="percent" id="javascript-pourcent"></span>
+    <h3>JavaScript / jQuery</h3>
+    <span class="percent" id="javascript-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progresspurple" id="progress-javascript"></span>
+    <span class="progressbar progresspurple" id="progress-javascript"></span>
     </div>
-  </li>
-  
-  <li>
+</li>
+
+<li>
     <div class="progressbar-title">
-      <h3>PHP</h3>
-      <span class="percent" id="php-pourcent"></span>
+    <h3>PHP</h3>
+    <span class="percent" id="php-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressorange" id="progress-php"></span>
+    <span class="progressbar progressorange" id="progress-php"></span>
     </div>
-  </li>
-  
-  <li>
+</li>
+
+<li>
     <div class="progressbar-title">
-      <h3>AngularJS</h3>
-      <span class="percent" id="angular-pourcent"></span>
+    <h3>AngularJS</h3>
+    <span class="percent" id="angular-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-angular"></span>
+    <span class="progressbar progressgreen" id="progress-angular"></span>
     </div>
-  </li>
-  
+</li>
+
 </ul>
+        
+</div>
+</div>
+</div>
+</div>
+
 
 
 <script>
