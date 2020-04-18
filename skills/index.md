@@ -29,27 +29,21 @@ comments: false
 
 <div class="container">
     <div class="row">
-    <div class="col-lg-4 col-md-6 text-center">
-    <div class="service-box">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-wrench wow bounceIn text-primary"></i>
+                    <h3>Software Tools </h3>
+                    <h4 class="text-muted"> - ROS</h4>
+                    <h4 class="text-muted"> - Gazebo</h4>
+                    <h4 class="text-muted"> - Solidworks</h4>
+                    <h4 class="text-muted"> - Catia</h4>
+                    <h4 class="text-muted"> - ANSYS</h4>
+                </div>
+            </div>
 
 
-<div class="container">
-  <div class="row">
-      <div class="col-lg-4 col-md-6 text-center">
-      <div class="service-box">
-        <i class="fa fa-4x fa-wrench wow bounceIn text-primary"></i>
-        <h3>Software Tools </h3>
-        <h4 class="text-muted"> - ROS</h4>
-        <h4 class="text-muted"> - Gazebo</h4>
-        <h4 class="text-muted"> - Solidworks</h4>
-        <h4 class="text-muted"> - Catia</h4>
-        <h4 class="text-muted"> - ANSYS</h4>
-      </div>
-    </div>
-
-
-<div class="col-lg-4 col-md-6 text-center">
-        <div class="service-box">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
                     <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Programming Languages</h3>
 
@@ -62,7 +56,7 @@ comments: false
             </div>
 
             
-<div class="col-lg-4 col-md-6 text-center">
+            <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-plus wow bounceIn text-primary" data-wow-delay=".2s"></i>
                     <h3>Libraries</h3>
@@ -75,6 +69,6 @@ comments: false
                 </div>
             </div>
             
-        </div>
-    </div> 
+    </div>
+</div> 
 </section>
