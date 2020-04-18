@@ -7,7 +7,6 @@ comments: false
 ---
 <html>
 <body>
-<center>
     
 <ul class="skills-bar-container">
   
@@ -62,7 +61,6 @@ comments: false
   
 </ul>
 
-</center>
 </body>
 </html>
 
