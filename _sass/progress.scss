@@ -126,20 +126,17 @@ $animation-delay: .7s;
 .progressorange{background-color:$orange;}
 .progressgreen{background-color:$green;}
 
-@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@-webkit-keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-python{0%{width: 0%;} 100%{ width: 70%;}}
+@-webkit-keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
 
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@-moz-keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-python{0%{width: 0%;} 100%{ width: 70%;}}
+@-moz-keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
 
-@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@keyframes progress-angular{0%{width: 0%;} 100%{ width: 65%;}}
+@keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-python{0%{width: 0%;} 100%{ width: 70%;}}
+@keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
