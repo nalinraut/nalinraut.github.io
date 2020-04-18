@@ -58,11 +58,23 @@ $(document).ready(function() {
 
 //Progress bar
 var lang = {
-  "html": "100%",
-  "css": "90%",
-  "javascript": "70%",
-  "php": "55%",
-  "angular": "65%"
+  "cpp": "80%",
+  "python": "75%",
+  "java": "40%",
+  "javascript": "60%",
+
+  "ros": "80%",
+  "matlab": "70%",
+  "zmq": "60",
+
+  "opencv": "80%",
+  "pcl": "80%",
+  "qt": "50%",
+  "scikit": "60%",
+  "kerastensor": "60%",
+  
+  "aws": "30%"
+
 };
 
 var multiply = 4;

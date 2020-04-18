@@ -8,21 +8,21 @@ comments: false
 <html>
 <body>
 <div class="skills-bar-container"> 
+<h3> Programming Languages</h3>
 <ul>
-  
   <li>
     <div class="progressbar-title">
-      <h3>HTML5</h3>
-      <span class="percent" id="html-pourcent"></span>
+      <h5>C/CPP-OOPs</h5>
+      <span class="percent" id="cpp-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressred" id="progress-html"></span>
+      <span class="progressbar progressred" id="progress-cpp"></span>
     </div>
   </li>
   <li>
     <div class="progressbar-title">
       <h3>CSS / SASS</h3>
-      <span class="percent" id="css-pourcent"></span>
+      <span class="percent" id="python-pourcent"></span>
     </div>
     <div class="bar-container">
       <span class="progressbar progressblue" id="progress-css"></span>
@@ -32,7 +32,7 @@ comments: false
   <li>
     <div class="progressbar-title">
       <h3>JavaScript / jQuery</h3>
-      <span class="percent" id="javascript-pourcent"></span>
+      <span class="percent" id="java-pourcent"></span>
     </div>
     <div class="bar-container">
       <span class="progressbar progresspurple" id="progress-javascript"></span>
@@ -42,22 +42,13 @@ comments: false
   <li>
     <div class="progressbar-title">
       <h3>PHP</h3>
-      <span class="percent" id="php-pourcent"></span>
+      <span class="percent" id="javascript-pourcent"></span>
     </div>
     <div class="bar-container">
       <span class="progressbar progressorange" id="progress-php"></span>
     </div>
   </li>
-  
-  <li>
-    <div class="progressbar-title">
-      <h3>AngularJS</h3>
-      <span class="percent" id="angular-pourcent"></span>
-    </div>
-    <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-angular"></span>
-    </div>
-  </li>
+
   
 </ul>
 </div>
