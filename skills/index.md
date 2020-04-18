@@ -31,106 +31,76 @@ comments: false
     <div class="row">
     <div class="col-lg-4 col-md-6 text-center">
     <div class="service-box">
-<ul class="skills-bar-container">
-
-<li>
-    <div class="progressbar-title">
-    <h3>HTML5</h3>
-    <span class="percent" id="html-pourcent"></span>
-    </div>
-    <div class="bar-container">
-    <span class="progressbar progressred" id="progress-html"></span>
-    </div>
-</li>
-<li>
-    <div class="progressbar-title">
-    <h3>CSS / SASS</h3>
-    <span class="percent" id="css-pourcent"></span>
-    </div>
-    <div class="bar-container">
-    <span class="progressbar progressblue" id="progress-css"></span>
-    </div>
-</li>
-
-<li>
-    <div class="progressbar-title">
-    <h3>JavaScript / jQuery</h3>
-    <span class="percent" id="javascript-pourcent"></span>
-    </div>
-    <div class="bar-container">
-    <span class="progressbar progresspurple" id="progress-javascript"></span>
-    </div>
-</li>
-
-<li>
-    <div class="progressbar-title">
-    <h3>PHP</h3>
-    <span class="percent" id="php-pourcent"></span>
-    </div>
-    <div class="bar-container">
-    <span class="progressbar progressorange" id="progress-php"></span>
-    </div>
-</li>
-
-<li>
-    <div class="progressbar-title">
-    <h3>AngularJS</h3>
-    <span class="percent" id="angular-pourcent"></span>
-    </div>
-    <div class="bar-container">
-    <span class="progressbar progressgreen" id="progress-angular"></span>
-    </div>
-</li>
-
-</ul>
-        
-</div>
-</div>
-</div>
-</div>
 
 
-
-<script>
-var lang = {
-  "html": "100%",
-  "css": "90%",
-  "javascript": "70%",
-  "php": "55%",
-  "angular": "65%"
-};
-
-var multiply = 4;
-
-$.each( lang, function( language, pourcent) {
-
-  var delay = 700;
-  
-  setTimeout(function() {
-    $('#'+language+'-pourcent').html(pourcent);
-  },delay*multiply);
-  
-  multiply++;
-
-});
-</script>
-    
-<!-- <div class="container">
+<div class="container">
   <div class="row">
       <div class="col-lg-4 col-md-6 text-center">
       <div class="service-box">
         <i class="fa fa-4x fa-wrench wow bounceIn text-primary"></i>
         <h3>Software Tools </h3>
-        <h4 class="text-muted"> - ROS</h4>
+        <ul class="skills-bar-container">
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>HTML5</h3>
+      <span class="percent" id="html-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressred" id="progress-html"></span>
+    </div>
+  </li>
+  <li>
+    <div class="progressbar-title">
+      <h3>CSS / SASS</h3>
+      <span class="percent" id="css-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressblue" id="progress-css"></span>
+    </div>
+  </li>
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>JavaScript / jQuery</h3>
+      <span class="percent" id="javascript-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progresspurple" id="progress-javascript"></span>
+    </div>
+  </li>
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>PHP</h3>
+      <span class="percent" id="php-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressorange" id="progress-php"></span>
+    </div>
+  </li>
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>AngularJS</h3>
+      <span class="percent" id="angular-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressgreen" id="progress-angular"></span>
+    </div>
+  </li>
+  
+</ul>
+        <!-- <h4 class="text-muted"> - ROS</h4>
         <h4 class="text-muted"> - Gazebo</h4>
         <h4 class="text-muted"> - Solidworks</h4>
         <h4 class="text-muted"> - Catia</h4>
-        <h4 class="text-muted"> - ANSYS</h4>
+        <h4 class="text-muted"> - ANSYS</h4> -->
       </div>
     </div>
 
 
-<div class="col-lg-4 col-md-6 text-center">
+<!-- <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box">
                     <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Programming Languages</h3>
@@ -158,5 +128,5 @@ $.each( lang, function( language, pourcent) {
             </div>
             
         </div>
-    </div> -->
+    </div>  -->
 </section>
