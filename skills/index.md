@@ -49,37 +49,6 @@ comments: false
     </div>
   </li>
 
-  <h2> Software Framework</h2>
-<ul>
-  <li>
-    <div class="progressbar-title">
-      <h3>C/CPP-OOPs</h3>
-      <span class="percent" id="ros-pourcent"></span>
-    </div>
-    <div class="bar-container">
-      <span class="progressbar progressred" id="progress-cpp"></span>
-    </div>
-  </li>
-  <li>
-    <div class="progressbar-title">
-      <h3>Python</h3>
-      <span class="percent" id="matlab-pourcent"></span>
-    </div>
-    <div class="bar-container">
-      <span class="progressbar progressblue" id="progress-css"></span>
-    </div>
-  </li>
-  
-  <li>
-    <div class="progressbar-title">
-      <h3>JavaScript / jQuery</h3>
-      <span class="percent" id="zmq-pourcent"></span>
-    </div>
-    <div class="bar-container">
-      <span class="progressbar progresspurple" id="progress-javascript"></span>
-    </div>
-  </li>
-</ul>
 
 
 </div>
