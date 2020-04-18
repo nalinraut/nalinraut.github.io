@@ -4,7 +4,11 @@ $font-family: 'PT Sans', sans-serif;
 
 $li-padding: 3px;
 
-// colors
+$red                 : #c0392b;
+$blue                : #1199ff;
+$purple              : #9b59b6;
+$orange              : #ffa500;
+$green               : #27ae60;
 $background-color: #1a1a1a;
 $progressbar-title-color: #fff;
 
@@ -81,38 +85,31 @@ $animation-delay: .7s;
         animation-fill-mode: both;
       }
       #progress-cpp{
-        -webkit-animation-name: progress-html;
-        animation-name: progress-html;
+        -webkit-animation-name: progress-cpp;
+        animation-name: progress-cpp;
         -webkit-animation-delay: $animation-delay;
         animation-delay: $animation-delay;
       }
 
       #progress-python{
-        -webkit-animation-name: progress-css;
-        animation-name: progress-css;
+        -webkit-animation-name: progress-python;
+        animation-name: progress-python;
         -webkit-animation-delay: $animation-delay*2;
         animation-delay: $animation-delay*2;
       }
 
       #progress-java{
-        -webkit-animation-name: progress-javascript;
-        animation-name: progress-javascript;
+        -webkit-animation-name: progress-java;
+        animation-name: progress-java;
         -webkit-animation-delay:$animation-delay*3;
         animation-delay: $animation-delay*3;
       }
 
       #progress-javascript{
-        -webkit-animation-name: progress-php;
-        animation-name: progress-php;
+        -webkit-animation-name: progress-javascript;
+        animation-name: progress-javascript;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*4;
-      }
-
-      #progress-ros{
-        -webkit-animation-name: progress-angular;
-        animation-name: progress-angular;
-        -webkit-animation-delay: $animation-delay*5;
-        animation-delay: $animation-delay*5;
       }
     }// end bar-container
   }
