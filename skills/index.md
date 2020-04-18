@@ -6,7 +6,7 @@ date: 2016-03-21
 comments: false
 ---
 
-            <ul class="skills-bar-container">
+<ul class="skills-bar-container">
   
   <li>
     <div class="progressbar-title">
