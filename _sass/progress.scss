@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
+$font-family: 'PT Sans', sans-serif;
+
 $li-padding: 5px;
 
 // colors
@@ -30,12 +32,19 @@ $animation-delay: .7s;
   box-sizing: border-box;
 }
 
+// html,body{
+//   background: $background-color;
+//   width: 100%;
+//   height: 100%;
+//   font-family: $font-family;
+// }
+
 .skills-bar-container{
   position: relative;
-  width: 80%;
+  width: 40%;
   min-width: 300px;
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   list-style:none;
