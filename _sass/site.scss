@@ -225,6 +225,7 @@ header .entry-meta {
 // Progress bar
 
 $animation-delay: .7s;
+$li-padding: 5px;
 
 @mixin border-radius($radius){
   -webkit-border-radius: $radius;
