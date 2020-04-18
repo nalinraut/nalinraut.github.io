@@ -6,22 +6,6 @@ date: 2016-03-21
 comments: false
 ---
 
-<html>
-<body>
-<center>
-      
-
-
-</center>
-</body>
-</html>
-
-
-
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
             <ul class="skills-bar-container">
   
   <li>
@@ -74,9 +58,27 @@ comments: false
   </li>
   
 </ul>
+
+<html>
+<body>
+<center>
+      
+
+
+</center>
+</body>
+</html>
+
+
+
+<!-- <section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 <!-- <div class="container">
@@ -123,4 +125,4 @@ comments: false
             
     </div>
 </div>  -->
-</section>
+<!-- </section> -->
