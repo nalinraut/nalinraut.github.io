@@ -7,8 +7,8 @@ comments: false
 ---
 <html>
 <body>
-    
-<ul>
+<div> 
+<ul class="skills-bar-container">
   
   <li>
     <div class="progressbar-title">
@@ -60,6 +60,7 @@ comments: false
   </li>
   
 </ul>
+</div>
 
 </body>
 </html>
