@@ -25,7 +25,7 @@ comments: false
       <span class="percent" id="python-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-css"></span>
+      <span class="progressbar progressgreen" id="progress-python"></span>
     </div>
   </li>
   
@@ -35,7 +35,7 @@ comments: false
       <span class="percent" id="java-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-javascript"></span>
+      <span class="progressbar progressgreen" id="progress-java"></span>
     </div>
   </li>
   
@@ -45,7 +45,7 @@ comments: false
       <span class="percent" id="javascript-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-php"></span>
+      <span class="progressbar progressgreen" id="progress-javascript"></span>
     </div>
   </li>
 
