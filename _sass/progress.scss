@@ -125,6 +125,48 @@ $animation-delay: .7s;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*4;
       }
+
+      #progress-opencv{
+        -webkit-animation-name: progress-opencv;
+        animation-name: progress-opencv;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+      #progress-pcl{
+        -webkit-animation-name: progress-pcl;
+        animation-name: progress-pcl;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+      #progress-qt{
+        -webkit-animation-name: progress-qt;
+        animation-name: progress-qt;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+      #progress-scikit{
+        -webkit-animation-name: progress-scikit;
+        animation-name: progress-scikit;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+      #progress-kerastensor{
+        -webkit-animation-name: progress-kerastensor;
+        animation-name: progress-kerastensor;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+      #progress-aws{
+        -webkit-animation-name: progress-aws;
+        animation-name: progress-aws;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
     }// end bar-container
   }
 }
@@ -144,6 +186,12 @@ $animation-delay: .7s;
 @-webkit-keyframes progress-ros{0%{width: 0%;} 100%{ width: 80%;}}
 @-webkit-keyframes progress-matlab{0%{width: 0%;} 100%{ width: 70%;}}
 @-webkit-keyframes progress-zmq{0%{width: 0%;} 100%{ width: 60%;}}
+@-webkit-keyframes progress-opencv{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-pcl{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-qt{0%{width: 0%;} 100%{ width: 50%;}}
+@-webkit-keyframes progress-scikit{0%{width: 0%;} 100%{ width: 60%;}}
+@-webkit-keyframes progress-kerastensor{0%{width: 0%;} 100%{ width: 60%;}}
+@-webkit-keyframes progress-aws{0%{width: 0%;} 100%{ width: 30%;}}
 
 @-moz-keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
 @-moz-keyframes progress-python{0%{width: 0%;} 100%{ width: 75%;}}
@@ -152,11 +200,23 @@ $animation-delay: .7s;
 @-moz-keyframes progress-ros{0%{width: 0%;} 100%{ width: 80%;}}
 @-moz-keyframes progress-matlab{0%{width: 0%;} 100%{ width: 70%;}}
 @-moz-keyframes progress-zmq{0%{width: 0%;} 100%{ width: 60%;}}
+@-moz-keyframes progress-opencv{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-pcl{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-qt{0%{width: 0%;} 100%{ width: 50%;}}
+@-moz-keyframes progress-scikit{0%{width: 0%;} 100%{ width: 60%;}}
+@-moz-keyframes progress-kerastensor{0%{width: 0%;} 100%{ width: 60%;}}
+@-moz-keyframes progress-aws{0%{width: 0%;} 100%{ width: 30%;}}
 
 @keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-python{0%{width: 0%;} 100%{ width: 75%;}}
 @keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 80%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
+@keyframes progress-ros{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-matlab{0%{width: 0%;} 100%{ width: 70%;}}
+@keyframes progress-zmq{0%{width: 0%;} 100%{ width: 60%;}}
+@keyframes progress-opencv{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-pcl{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-qt{0%{width: 0%;} 100%{ width: 50%;}}
+@keyframes progress-scikit{0%{width: 0%;} 100%{ width: 60%;}}
+@keyframes progress-kerastensor{0%{width: 0%;} 100%{ width: 60%;}}
+@keyframes progress-aws{0%{width: 0%;} 100%{ width: 30%;}}
