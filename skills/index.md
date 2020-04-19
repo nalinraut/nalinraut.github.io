@@ -129,7 +129,7 @@ comments: false
   <li>
     <div class="progressbar-title">
       <h3>Tensorflow | KERAS</h3>
-      <span class="percent" id="javascript-kerastensor"></span>
+      <span class="percent" id="kerastensor-pourcent"></span>
     </div>
     <div class="bar-container">
       <span class="progressbar progresspurple" id="progress-kerastensor"></span>
@@ -146,7 +146,7 @@ comments: false
       <span class="percent" id="aws-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressorang" id="progress-aws"></span>
+      <span class="progressbar progressorange" id="progress-aws"></span>
     </div>
   </li>
   </ul>
