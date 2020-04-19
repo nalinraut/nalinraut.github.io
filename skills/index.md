@@ -93,7 +93,7 @@ comments: false
       <span class="percent" id="opencv-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-opencv"></span>
+      <span class="progressbar progresspurple" id="progress-opencv"></span>
     </div>
   </li>
   <li>
@@ -102,7 +102,7 @@ comments: false
       <span class="percent" id="pcl-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-pcl"></span>
+      <span class="progressbar progresspurple" id="progress-pcl"></span>
     </div>
   </li>
   
@@ -112,7 +112,7 @@ comments: false
       <span class="percent" id="qt-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-qt"></span>
+      <span class="progressbar progresspurple" id="progress-qt"></span>
     </div>
   </li>
   
@@ -122,7 +122,7 @@ comments: false
       <span class="percent" id="scikit-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-scikit"></span>
+      <span class="progressbar progresspurple" id="progress-scikit"></span>
     </div>
   </li>
 
@@ -132,7 +132,7 @@ comments: false
       <span class="percent" id="javascript-kerastensor"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-kerastensor"></span>
+      <span class="progressbar progresspurple" id="progress-kerastensor"></span>
     </div>
   </li>
 
@@ -146,7 +146,7 @@ comments: false
       <span class="percent" id="aws-pourcent"></span>
     </div>
     <div class="bar-container">
-      <span class="progressbar progressgreen" id="progress-aws"></span>
+      <span class="progressbar progressorang" id="progress-aws"></span>
     </div>
   </li>
   </ul>
