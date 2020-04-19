@@ -51,7 +51,7 @@ comments: false
 
 </ul>
 
-
+<hr class="hr-line">
 <h2> Software Framework </h2>
 <ul>
   <li>
@@ -83,7 +83,7 @@ comments: false
     </div>
   </li>
 </ul>
-
+<hr class="hr-line">
 </div>
 
 </body>
