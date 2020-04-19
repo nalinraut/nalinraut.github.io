@@ -51,6 +51,39 @@ comments: false
 
 </ul>
 
+
+<h2> Software Framework </h2>
+<ul>
+  <li>
+    <div class="progressbar-title">
+      <h3>ROS</h3>
+      <span class="percent" id="ros-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressred" id="progress-ros"></span>
+    </div>
+  </li>
+  <li>
+    <div class="progressbar-title">
+      <h3>MATLAB</h3>
+      <span class="percent" id="matlab-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressred" id="progress-matlab"></span>
+    </div>
+  </li>
+  
+  <li>
+    <div class="progressbar-title">
+      <h3>ZeroMQ</h3>
+      <span class="percent" id="zmq-pourcent"></span>
+    </div>
+    <div class="bar-container">
+      <span class="progressbar progressred" id="progress-zmq"></span>
+    </div>
+  </li>
+</ul>
+
 </div>
 
 </body>

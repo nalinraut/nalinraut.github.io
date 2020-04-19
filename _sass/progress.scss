@@ -104,6 +104,27 @@ $animation-delay: .7s;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*4;
       }
+
+      #progress-ros{
+        -webkit-animation-name: progress-ros;
+        animation-name: progress-ros;
+        -webkit-animation-delay: $animation-delay*2;
+        animation-delay: $animation-delay*2;
+      }
+
+      #progress-matlab{
+        -webkit-animation-name: progress-matlab;
+        animation-name: progress-matlab;
+        -webkit-animation-delay:$animation-delay*3;
+        animation-delay: $animation-delay*3;
+      }
+
+      #progress-zmq{
+        -webkit-animation-name: progress-zmq;
+        animation-name: progress-zmq;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
     }// end bar-container
   }
 }
@@ -120,13 +141,22 @@ $animation-delay: .7s;
 @-webkit-keyframes progress-python{0%{width: 0%;} 100%{ width: 75%;}}
 @-webkit-keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
+@-webkit-keyframes progress-ros{0%{width: 0%;} 100%{ width: 80%;}}
+@-webkit-keyframes progress-matlab{0%{width: 0%;} 100%{ width: 70%;}}
+@-webkit-keyframes progress-zmq{0%{width: 0%;} 100%{ width: 60%;}}
 
 @-moz-keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
 @-moz-keyframes progress-python{0%{width: 0%;} 100%{ width: 75%;}}
 @-moz-keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
+@-moz-keyframes progress-ros{0%{width: 0%;} 100%{ width: 80%;}}
+@-moz-keyframes progress-matlab{0%{width: 0%;} 100%{ width: 70%;}}
+@-moz-keyframes progress-zmq{0%{width: 0%;} 100%{ width: 60%;}}
 
 @keyframes progress-cpp{0%{width: 0%;} 100%{ width: 80%;}}
 @keyframes progress-python{0%{width: 0%;} 100%{ width: 75%;}}
 @keyframes progress-java{0%{width: 0%;} 100%{ width: 40%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 80%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: 60%;}}
