@@ -1,12 +1,11 @@
 ---
-title: "Finding Lane Lines on Road"
-excerpt: "Computer Vision - June 2018"
-collection: projects
+layout: page
+title: Finding Lane Lines on Road
+description: Lane detection algorithm using HLS color space, Canny edge detection, and Hough line transform for autonomous vehicle applications.
+img: assets/img/lanelines/video.gif
+importance: 6
+category: work
 ---
-
-![Finding Lane Lines]({{ '/assets/img/lanelines/video.gif' | relative_url }}){:style="max-width: 500px; height: auto;"}
-
-## Description
 
 When we drive, we use our eyes to decide where to go. The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle. In this project, I develop an algorithm to detect lane lines automatically.
 
@@ -71,4 +70,3 @@ The image with extrapolated lines goes on the original image and forms the final
 This project is a very primitive way of detecting lane lines. The shortcoming of this project is the need to manually tune a number of parameters that can be done using auto-calibration. Also, the algorithm can be improved using a quadratic curve fitting technique encompassing the edge points. This will provide with better results.
 
 **Code Repository:** [GitHub](https://github.com/nalinraut/CarND-Lane_Lines)
-

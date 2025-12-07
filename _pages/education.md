@@ -1,20 +1,16 @@
 ---
 layout: page
-title: Education
+title: education
 permalink: /education/
 nav: true
 nav_order: 4
 ---
-
-![WPI]({{ '/assets/img/WPI.png' | relative_url }}){:style="max-width: 176px; height: auto;"}
 
 **Worcester Polytechnic Institute, Worcester, MA, USA.**  
 Master of Science in Robotics Engineering  
 GPA: 4.0/4.0
 
 ---
-
-![University of Pune]({{ '/assets/img/uop.png' | relative_url }}){:style="max-width: 300px; height: auto;"}
 
 **University of Pune, Pune, MH, India**  
 Bachelor of Engineering in Mechanical Engineering  

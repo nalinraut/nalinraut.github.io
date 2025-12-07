@@ -1,19 +1,26 @@
 ---
 layout: page
-title: Professional Experience
+title: professional-experience
 permalink: /profexp/
 nav: true
 nav_order: 5
+
 ---
 
-![Greensight Agronomics]({{ '/assets/img/greensightag.png' | relative_url }}){:style="max-width: 176px; height: auto;"}
+**Symbotic, Wilmington, MA, USA**  
+Advanced Software Engineer, September 2020 - present 
+
+---
+
+**Humatics, Waltham, MA, USA**  
+Associate Software Engineer, October 2019 - May 2020 
+
+---
 
 **Greensight Agronomics, Boston, MA, USA**  
-Software Engineer in Training - Perception | Planning, October 2018 - Present
+Software Engineering Co-Op - Perception | Planning, October 2018 - April 2019
 
 ---
-
-![Robolab Technologies]({{ '/assets/img/rob.jpg' | relative_url }}){:style="max-width: 176px; height: auto;"}
 
 **Robolab Technologies, Pune, MH, India**  
 Research and Development Engineer, July 2016 - June 2017

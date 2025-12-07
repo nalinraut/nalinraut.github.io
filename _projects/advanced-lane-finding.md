@@ -1,12 +1,11 @@
 ---
-title: "Advanced Lane Finding"
-excerpt: "Computer Vision - July 2018"
-collection: projects
+layout: page
+title: Advanced Lane Finding
+description: Advanced lane detection algorithm using camera calibration, perspective transform, and polynomial fitting for autonomous driving applications.
+img: assets/img/lanefinding/project_video.gif
+importance: 5
+category: work
 ---
-
-![Advanced Lane Finding]({{ '/assets/img/lanefinding/project_video.gif' | relative_url }}){:style="max-width: 500px; height: auto;"}
-
-## Description
 
 When we drive, we use our eyes to decide where to go. The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle. In this project, I develop an algorithm to detect lane lines automatically with a front facing camera. This project is an upgrade to [Finding Lane Lines Road](https://nalinraut.github.io/finding-lane-lines/).
 
@@ -92,4 +91,3 @@ To find the radius of curvature I use the following equations
 The method is slow and not robust. Semantic segmentation techniques can be used to identify drivable areas and lane lines.
 
 **Code Repository:** [GitHub](https://github.com/nalinraut/CarND-Advanced-Lane-Finding)
-

@@ -1,12 +1,11 @@
 ---
-title: "3 Dimensional Rapidly Exploring Random Trees Algorithm on Fetch Robot"
-excerpt: "Motion Planning - April 2017 - May 2017"
-collection: projects
+layout: page
+title: 3 Dimensional Rapidly Exploring Random Trees Algorithm on Fetch Robot
+description: Motion planning using 3D RRT algorithm on Fetch Robot Manipulator in OpenAI's Robotics Environment for path planning from start to goal location.
+img: assets/img/mp1.gif
+importance: 8
+category: work
 ---
-
-![3D RRT]({{ '/assets/img/mp1.gif' | relative_url }}){:style="max-width: 500px; height: auto;"}
-
-## Description
 
 This project uses Open AI's Robotics Environment for a Motion Planning problem. Rapidly exploring Random Trees (RRT) algorithm is implemented in a 3- Dimensional Space. Motion planning algorithm is implemented in the Fetch Robot Manipulator and the end-effector follows the planned path from a start to goal location.
 
@@ -40,4 +39,3 @@ The table below shows cost incurred for paths in a 3D space with obstacle.
 
 **Code Repository:** [GitHub](https://github.com/nalinraut/Planning-Algorithms/tree/master/3D_RRT)  
 **Project Report:** [PDF](https://github.com/nalinraut/Planning-Algorithms/blob/master/3D_RRT/Report.pdf)
-

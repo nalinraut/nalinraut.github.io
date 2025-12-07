@@ -1,12 +1,11 @@
 ---
-title: "Virtual Haptic Environment"
-excerpt: "Robot Dynamics - January 2018 - May 2018"
-collection: projects
+layout: page
+title: Virtual Haptic Environment
+description: Virtual haptic environment for surgical simulation using CHAI3D, ROS, OpenGL, and Bullet Physics engine for robot-assisted surgical systems.
+img: assets/img/dyn.gif
+importance: 4
+category: work
 ---
-
-![Virtual Haptic Environment]({{ '/assets/img/dyn.gif' | relative_url }}){:style="max-width: 500px; height: auto;"}
-
-## Description
 
 With the advancement of technology, robot assisted surgical systems are developed to overcome the limitations of pre-existing minimally-invasive surgical procedures. However, these surgical systems lack real time force feedback during the operation. Haptics and force feedback allow a surgeon to make more controlled movements in simulation and reality, but so far neither has been extensively implemented. This paper aimed to model a virtual gripper to interact with dynamic bodies present in the environment and calculate simulated tip forces to transfer back to the haptic device and subsequently the user. The force feedback produced at the gripper is translated to the haptic device, enabling the user to feel the forces generated at the gripper. The simulated environment, dynamical calculations, and feedback were tested using the haptic device controlling the modelled gripper by holding, moving, and acting upon bodies present in the virtual environment.
 
@@ -21,4 +20,3 @@ For establishing the communication between Novint Falcon and CHAI-ROS bridge, ro
 Using the Geomagic touch device with CHAI3D is a challenge as the device is old and not supported directly by the CHAI3D library. Although there exists procedures to install the device kernels for the CHAI environment to detect it, we were unsuccessful in doing so because of operating system compatibility issues. Also, the native kernel would not provide ROS interfacing. To tackle this situation, the Geomagic ROS package was installed and a teleoperation module was developed from scratch to interface the Geomagic touch with the virtual MTML device in the haptic simulation. The Geomagic ROS package provides the ROS topics for pose, force and twist that were used to establish its communication with the MTML as the DVRK ROS package provides similar ROS topics. This module aided us in realizing the incision practice task as discussed in section IV-B.
 
 **Code Repository:** [GitHub](https://github.com/nalinraut/daVinci_haptics)
-

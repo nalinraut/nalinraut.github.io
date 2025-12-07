@@ -1,12 +1,11 @@
 ---
-title: "Traffic Sign Classifier"
-excerpt: "Computer Vision - Deep Learning - July 2018"
-collection: projects
+layout: page
+title: Traffic Sign Classifier
+description: Deep learning traffic sign classification using CNN and LeNet architecture on German Traffic Sign dataset, achieving 92.90% test accuracy.
+img: assets/img/trafficsignclassifier/intro.jpg
+importance: 7
+category: work
 ---
-
-![Traffic Sign Classifier]({{ '/assets/img/trafficsignclassifier/intro.jpg' | relative_url }}){:style="max-width: 500px; height: auto;"}
-
-## Description
 
 It is extremely necessary for a self-driving car to perceive all the traffic indications, mostly conveyed through traffic signs and act/ drive accordingly. In this project, I develop an algorithm to classify traffic signs. The project uses German Traffic Sign dataset.
 
@@ -107,4 +106,3 @@ The probabilities for individual labels for each image are as follows:
 This project uses an architecture similar to LeNet for training purpose. An accuracy of 92.90% is obtained for the test set. The accuracy can be improved using batch normalization after every convolutional layer in the neural network model.
 
 **Code Repository:** [GitHub](https://github.com/nalinraut/CarND-Traffic_Sign_Classifier)
-
