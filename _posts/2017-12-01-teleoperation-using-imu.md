@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: projects
 title:  "Robot Teleoperation by Inertial Measurement Unit"
 duration:   "November 2017 - December 2017"
 excerpt: "Foundation of Robotics"

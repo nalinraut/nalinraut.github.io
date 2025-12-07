@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: projects
 title:  "Traffic Sign Classifier"
 duration:  "July 2018" 
 excerpt: "Computer Vision - Deep Learning"

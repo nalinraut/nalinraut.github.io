@@ -1,7 +1,9 @@
 ---
+layout: page
+title: Professional Experience
 permalink: /profexp/
-title: "Professional Experience"
-author_profile: true
+nav: true
+nav_order: 5
 ---
 
 ![Greensight Agronomics]({{ '/assets/img/greensightag.png' | relative_url }}){:style="max-width: 176px; height: auto;"}
@@ -15,4 +17,3 @@ Software Engineer in Training - Perception | Planning, October 2018 - Present
 
 **Robolab Technologies, Pune, MH, India**  
 Research and Development Engineer, July 2016 - June 2017
-

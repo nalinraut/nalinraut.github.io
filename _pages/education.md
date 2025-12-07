@@ -1,7 +1,9 @@
 ---
+layout: page
+title: Education
 permalink: /education/
-title: "Education"
-author_profile: true
+nav: true
+nav_order: 4
 ---
 
 ![WPI]({{ '/assets/img/WPI.png' | relative_url }}){:style="max-width: 176px; height: auto;"}
@@ -17,4 +19,3 @@ GPA: 4.0/4.0
 **University of Pune, Pune, MH, India**  
 Bachelor of Engineering in Mechanical Engineering  
 Grade: First Class with Distinction
-
