@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title:  "Advanced Lane Finding"
 duration:  "July 2018" 
 excerpt: "Computer Vision"

@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title:  "Traffic Sign Classifier"
 duration:  "July 2018" 
 excerpt: "Computer Vision - Deep Learning"

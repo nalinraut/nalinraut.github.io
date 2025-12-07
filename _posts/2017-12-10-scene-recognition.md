@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title:  "Scene Recognition using Transfer Learning"
 excerpt: "Computer Vision"
 project: true
