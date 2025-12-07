@@ -20,14 +20,11 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome to my personal website! I am a Software Engineer (Robotics) by profession. The key focus of my work lies in Robotics Application Development, Robot State Estimation and Localization Algorithms, and 2D as well as 3D Computer Vision.
-
-I completed my master's degree in Robotics Engineering from Worcester Polytechnic Institute, MA, USA and my Bachelor's degree in Mechanical Engineering from University of Pune, India. During my professional experience, I have exhibited a combination of independent skills and individual contribution towards team effort.
-
-Apart from work, I am an amateur photographer and I like to go out whenever possible to get those clicks. In addition to the above, I also enjoy cooking.
+I'm a Software Engineer specializing in Robotics, currently developing robot behaviors for mobile platforms at Symbotic. I hold a Master's degree in Robotics Engineering from Worcester Polytechnic Institute and a Bachelor's in Mechanical Engineering from the University of Pune. My interests include vision-language models for robotics (VLM/VLA) and sim-to-real transfer techniques.
