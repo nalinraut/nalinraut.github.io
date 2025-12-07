@@ -24,6 +24,8 @@
    - ✅ Old Moon theme includes removed
    - ✅ Old Moon theme SASS files removed
    - ✅ Old JavaScript files replaced
+   - ✅ Old page directories removed (migrated to _pages/)
+   - ✅ Old theme references cleaned from config and posts
 
 ## 🔧 Next Steps to See Changes
 
