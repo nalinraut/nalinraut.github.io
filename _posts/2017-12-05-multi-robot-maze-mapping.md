@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: single
 title:  "Multi-Robot Maze Mapping"
 date:   2017-04-06 
 excerpt: "Artificial Intelligence"

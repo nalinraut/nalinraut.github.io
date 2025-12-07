@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: single
 title:  "Virtual Haptic Environment"
 duration: "January 2018 - May 2018" 
 excerpt: "Robot Dynamics"

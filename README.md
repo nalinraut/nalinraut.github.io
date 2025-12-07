@@ -1,30 +1,28 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+# Nalin Raut - Personal Website
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+Personal academic portfolio website built with [AcademicPages](https://github.com/academicpages/academicpages.github.io), a Jekyll template for academic personal websites.
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Setup
 
-## Preview
+This site uses GitHub Actions to build and deploy. The workflow is configured in `.github/workflows/pages.yml`.
 
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+## Local Development
 
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
+```bash
+bundle install
+bundle exec jekyll serve -l -H localhost
+```
 
-## Getting Started
+## Structure
 
-To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
+- `_pages/` - Static pages (about, education, etc.)
+- `_portfolio/` - Portfolio projects
+- `_posts/` - Blog posts
+- `_layouts/` - Page layouts
+- `_includes/` - Reusable components
+- `_sass/` - Stylesheets
+- `assets/` - CSS, JS, and images
+
+## Deployment
+
+The site is automatically built and deployed via GitHub Actions when changes are pushed to the main branch.

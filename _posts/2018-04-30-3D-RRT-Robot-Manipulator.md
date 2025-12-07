@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: single
 title:  "3 Dimensional Rapidly Exploring Random Trees Algorithm on Fetch Robot"
 excerpt: "Motion Planning"
 project: true

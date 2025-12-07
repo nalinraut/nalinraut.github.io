@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: single
 title:  "Finding Lane Lines on Road"
 duration:  "June 2018" 
 excerpt: "Computer Vision"
