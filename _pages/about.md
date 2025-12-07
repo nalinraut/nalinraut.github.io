@@ -20,10 +20,10 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-    latest_posts:
-      enabled: true
-      scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-      limit: 3 # leave blank to include all the blog posts
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 Welcome to my personal website! I am a Software Engineer (Robotics) by profession. The key focus of my work lies in Robotics Application Development, Robot State Estimation and Localization Algorithms, and 2D as well as 3D Computer Vision.
