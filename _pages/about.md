@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Robotics Software Engineer. USA.
+subtitle: Roboticist. USA.
 
 profile:
   align: right

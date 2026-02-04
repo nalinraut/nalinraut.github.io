@@ -8,7 +8,8 @@ nav_order: 5
 ---
 
 **Symbotic, Wilmington, MA, USA**  
-Advanced Software Engineer, September 2020 - present 
+Senior Software Engineer, December 2025 - present
+Advanced Software Engineer, September 2020 - December 2025 
 
 ---
 
