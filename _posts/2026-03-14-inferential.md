@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Your Factory Robots Don't Each Need Their Own GPU"
+title: "Inferential - Centralized Inference Orchestration for Factory Robotics"
 date: 2026-03-14
 description: "The case for centralized inference orchestration on the factory floor"
 tags: [robotics, edge-ai, inference, ray-serve, zmq]
@@ -123,14 +123,14 @@ Factory robots can't tolerate unbounded queues or silent request loss. Inferenti
 
 Every inference request generates latency metrics across the pipeline:
 
-```
+{% highlight text %}
 inference_latency_ms     →  pure model execution (Ray Serve)
 scheduling_wait_ms       →  time spent in the scheduler queue
 e2e_latency_ms           →  total server-side delay
 observation_staleness_ms →  age of sensor data on arrival
 payload_size_bytes       →  tensor payload size per request
 queue_depth              →  pending requests at dispatch time
-```
+{% endhighlight %}
 
 These get stored in a ring buffer (10,000 points per metric) with p50/p95/p99 percentile calculations and label-based filtering. There's a callback system (`@server.on_metric`) that streams metrics to Prometheus, Grafana, or whatever you're using.
 
@@ -140,7 +140,7 @@ If observation staleness starts creeping up on a specific robot, you'll know bef
 
 The robot-side code is minimal. Three dependencies (`pyzmq`, `protobuf`, `numpy`), no Ray, no async runtime:
 
-```python
+{% highlight python %}
 from inferential import Connection
 import numpy as np
 
@@ -158,7 +158,7 @@ model.observe(
 result = model.get_result(timeout_ms=50)
 if result:
     robot.set_actions(result["actions"])
-```
+{% endhighlight %}
 
 The observation keys (`camera_rgb`, `joint_angles`, etc.) are whatever you want them to be — any numpy array, any name. The SDK handles serialization, transport, and reconnection automatically. And since there's no Ray dependency on the robot side, it runs on any Python environment, including constrained embedded systems.
 
