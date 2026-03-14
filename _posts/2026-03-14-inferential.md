@@ -142,6 +142,8 @@ If observation staleness starts creeping up on a specific robot, you'll know bef
 
 The robot-side code is minimal. Three dependencies (`pyzmq`, `protobuf`, `numpy`), no Ray, no async runtime. Observation keys are user-defined — any numpy array with any name. The SDK handles serialization, transport, and reconnection (100ms initial, 5s max backoff) automatically. No Ray dependency on the robot side means it runs on any Python environment, including constrained embedded systems.
 
+Client SDKs: [Python (PyPI)](https://pypi.org/project/inferential/) · [Rust (crates.io)](https://crates.io/crates/inferential) · [C++ (Bazel Central Registry)](https://registry.bazel.build/modules/inferential)
+
 ## When edge still wins
 
 I don't want to oversell this. Centralized inference isn't always the right call. You still want edge compute when:
